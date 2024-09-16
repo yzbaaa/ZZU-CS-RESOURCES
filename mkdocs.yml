@@ -1,0 +1,103 @@
+site_name: ZZU计智学习指南
+site_author: yzbaaa
+
+repo_url: https://github.com/yzbaaa/ZZU-CS-RESOURCES
+repo_name: ZZU-CS-RESOURCES
+
+copyright: Copyright &copy; 2024-present <a href="https://github.com/yzbaaa" target="_blank" rel="noopener noreferrer">yzbaaa</a>
+
+nav:
+  - 主页:
+      - 00. 简介: index.md
+      - 01. 贡献指南: 00. home_page/01. contribution_guidelines.md
+  - 课程资源:  
+      - 00. 简介: 01. course_resources/00. introduction.md
+      - 01. 经验分享: 01. course_resources/01. experience_sharing.md
+      - 02. 培养方案: 01. course_resources/02. academic_plan.md
+      - 03. 通识课程: 01. course_resources/03. general_education_courses.md
+      - 04. 数理基础 & 英语: 01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md
+      - 05. 专业基础: 01. course_resources/05. professional_basic_courses.md
+      - 06. 专业必修: 01. course_resources/06. professional_compulsory.md
+      - 07. 专业选修: 01. course_resources/07. professional_elective.md
+      - 08. 常见问题: 01. course_resources/08. F&Q.md
+  - 科研: 
+      - 00. 简介: 02. research/00. introduction.md
+      - 01. 常见问题: 02. research/01. F&Q.md
+  - 竞赛: 
+      - 00. 简介: 03. contest/00. introduction.md
+      - 01. 实验室宣传: 03. contest/01. lab_publicity.md
+      - 02. 常见问题: 03. contest/02. F&Q.md
+  - 保研: 
+      - 00. 简介: 04. postgraduate_recommendation/00. introduction.md
+      - 01. 经验分享: 04. postgraduate_recommendation/01. experience_sharing.md
+      - 02. 常见问题: 04. postgraduate_recommendation/02. F&Q.md
+  - 考研: 
+      - 00. 简介: 05. postgraduate_entrance_examination/00. introduction.md
+      - 01. 经验分享: 05. postgraduate_entrance_examination/01. experience_sharing.md
+      - 02. 常见问题: 05. postgraduate_entrance_examination/02. F&Q.md
+  - 自学资源: 
+      - 00. 简介: 06. self-study_resources/00. introduction.md
+      - 01. 推荐: 06. self-study_resources/01. recommendations.md
+
+theme:
+  language: zh
+  name: material
+  search_index_only: false
+  favicon: images/favicon.png
+  logo: assets/logo.png
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+  palette: 
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/lightbulb-auto-outline
+        name: Switch to auto mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: white
+      accent: custom
+      scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: teal
+      accent: custom
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+
+
+plugins:
+  - glightbox
+  - search:
+        lang:
+            - en
+            - ja
+        separator: '[/s/-/.]+'
+  - git-revision-date-localized:
+      type: iso_date
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: True
+
+extra:
+  copyright: Copyright © 2024-present yzbaaa
+
+extra_css:
+  - stylesheets/extra.css
