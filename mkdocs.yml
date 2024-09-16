@@ -45,6 +45,7 @@ theme:
   search_index_only: false
   favicon: images/favicon.png
   logo: assets/logo.png
+  custom_dir: overrides
   features:
     - navigation.instant
     - navigation.tabs
@@ -95,9 +96,6 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: True
-
-extra:
-  copyright: Copyright © 2024-present yzbaaa
 
 extra_css:
   - stylesheets/extra.css
