@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/00. home_page/01. contribution_guidelines.md",
+                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
                 "mode": "source",
                 "source": false
               }
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/00. home_page/01. contribution_guidelines.md",
+                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/00. home_page/01. contribution_guidelines.md",
+                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/00. home_page/01. contribution_guidelines.md"
+                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md"
               }
             }
           }
@@ -181,6 +181,8 @@
   },
   "active": "6149791b2cd44791",
   "lastOpenFiles": [
+    "docs/00. home_page/01. contribution_guidelines.md",
+    "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
     "site/search/search_index.json",
     "site/search",
     "site/assets/javascripts/glightbox.min.js",
@@ -191,13 +193,10 @@
     "site/06. self-study_resources/00. introduction",
     "site/06. self-study_resources",
     "site/05. postgraduate_entrance_examination/02. F&Q/index.html",
-    "site/05. postgraduate_entrance_examination/00. introduction/index.html",
     "site/images/favicon.png",
     "site/assets/images/favicon.png",
     "site/assets/Pasted image 20240914180934.png",
     "site/assets/logo.png",
-    "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
-    "docs/00. home_page/01. contribution_guidelines.md",
     "docs/00. home_page/02. submission-template/00. course_submission_template.md",
     "README.md",
     "01 计划/03 大二上.md",
