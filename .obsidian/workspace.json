@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/00. home_page/01. contribution_guidelines.md",
+                "file": "docs/00. home_page/02. submission-template/00. course_submission_template.md",
                 "mode": "source",
                 "source": false
               }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/00. home_page/01. contribution_guidelines.md",
+                "file": "docs/00. home_page/02. submission-template/00. course_submission_template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/00. home_page/01. contribution_guidelines.md",
+                "file": "docs/00. home_page/02. submission-template/00. course_submission_template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/00. home_page/01. contribution_guidelines.md"
+                "file": "docs/00. home_page/02. submission-template/00. course_submission_template.md"
               }
             }
           }
@@ -166,8 +166,11 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "2c27e0f0cf8abf7c",
+  "active": "6149791b2cd44791",
   "lastOpenFiles": [
+    "docs/00. home_page/01. contribution_guidelines.md",
+    "docs/00. home_page/02. submission-template/00. course_submission_template.md",
+    "README.md",
     "site/search/search_index.json",
     "site/search",
     "site/assets/javascripts/glightbox.min.js",
@@ -178,18 +181,14 @@
     "site/06. self-study_resources/00. introduction",
     "site/06. self-study_resources",
     "site/05. postgraduate_entrance_examination/02. F&Q/index.html",
-    "site/05. postgraduate_entrance_examination/01. experience_sharing/index.html",
     "site/images/favicon.png",
     "site/assets/images/favicon.png",
     "site/assets/Pasted image 20240914180934.png",
     "site/assets/logo.png",
-    "docs/00. home_page/02. submission-template/00. course_submission_template.md",
-    "docs/00. home_page/01. contribution_guidelines.md",
     "docs/01. course_resources/01. experience_sharing.md",
     "docs/01. course_resources/07. professional_elective.md",
     "docs/01. course_resources/08. F&Q.md",
     "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
-    "README.md",
     "01 计划/03 大二上.md",
     "12 其他/课程共享计划/git&github入门.md",
     "12 其他/零碎问题简答.md",
