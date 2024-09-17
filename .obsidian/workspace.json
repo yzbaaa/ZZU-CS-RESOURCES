@@ -149,8 +149,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -167,7 +166,7 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "6149791b2cd44791",
+  "active": "2c27e0f0cf8abf7c",
   "lastOpenFiles": [
     "site/search/search_index.json",
     "site/search",
@@ -179,7 +178,7 @@
     "site/06. self-study_resources/00. introduction",
     "site/06. self-study_resources",
     "site/05. postgraduate_entrance_examination/02. F&Q/index.html",
-    "site/05. postgraduate_entrance_examination/00. introduction/index.html",
+    "site/05. postgraduate_entrance_examination/01. experience_sharing/index.html",
     "site/images/favicon.png",
     "site/assets/images/favicon.png",
     "site/assets/Pasted image 20240914180934.png",

@@ -601,17 +601,17 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#fatal-unable-to-access" class="md-nav__link">
     <span class="md-ellipsis">
       fatal: unable to access
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1554,17 +1554,17 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#fatal-unable-to-access" class="md-nav__link">
     <span class="md-ellipsis">
       fatal: unable to access
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1693,6 +1693,10 @@
 <td>建立本地分支。- <strong><code>-M</code> 选项</strong>：这是 <code>--move</code> 的简写，表示重命名分支。如果目标分支已经存在，<code>-M</code> 会强制覆盖</td>
 </tr>
 <tr>
+<td><code>git branch --set-upstream-to=&lt;remote_repo_alias/branch&gt; &lt;local_branch&gt;</code></td>
+<td>令指定的本地分支追踪指定的远程分支</td>
+</tr>
+<tr>
 <td><code>git checkout &lt;branch_name&gt;</code></td>
 <td>切换分支</td>
 </tr>
@@ -1718,6 +1722,10 @@
 <tr>
 <td><code>git branch</code></td>
 <td>列出所有本地分支，并标记当前所在的分支</td>
+</tr>
+<tr>
+<td><code>git branch -vv</code></td>
+<td>列出所有本地分支及其对应的远程分支</td>
 </tr>
 <tr>
 <td><code>git remote -v</code></td>
@@ -1830,7 +1838,7 @@
 </span></code></pre></div></td></tr></table></div>
 </li>
 </ol>
-<h5 id="fatal-unable-to-access">fatal: unable to access<a class="headerlink" href="#fatal-unable-to-access" title="Permanent link">&para;</a></h5>
+<h6 id="fatal-unable-to-access">fatal: unable to access<a class="headerlink" href="#fatal-unable-to-access" title="Permanent link">&para;</a></h6>
 <p><a href="https://blog.csdn.net/qq_43546721/article/details/139506583">完美解决 git 报错 "fatal: unable to access"</a></p>
 <p>最常用的方法是取消代理：</p>
 <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
