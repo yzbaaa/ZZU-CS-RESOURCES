@@ -1,1 +1,16 @@
-{}
+{
+  "promptDelete": false,
+  "trashOption": "local",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00 Inbox",
+  "attachmentFolderPath": "00 attachment",
+  "strictLineBreaks": true,
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "2",
+    "downscalePercent": 100
+  }
+}

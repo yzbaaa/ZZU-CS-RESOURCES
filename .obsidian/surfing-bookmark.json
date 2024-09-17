@@ -1,0 +1,24 @@
+{
+  "bookmarks": [
+    {
+      "id": "1297761700",
+      "name": "公式识别",
+      "url": "https://simpletex.net/ai/latex_ocr",
+      "description": "",
+      "category": [
+        "ROOT"
+      ],
+      "tags": "",
+      "created": 1716538306402,
+      "modified": 1716538306402
+    }
+  ],
+  "categories": [
+    {
+      "value": "ROOT",
+      "text": "ROOT",
+      "label": "ROOT",
+      "children": []
+    }
+  ]
+}

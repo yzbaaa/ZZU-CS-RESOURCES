@@ -1,0 +1,14 @@
+{
+  "enabledScrollToTop": true,
+  "enabledScrollToBottom": true,
+  "enabledScrollToCursor": false,
+  "iconScrollToTop": "arrow-up",
+  "iconScrollToBottom": "arrow-down",
+  "iconScrollToCursor": "text-cursor-input",
+  "showTooltip": false,
+  "scrollTopTooltipText": "Scroll to top",
+  "scrollBottomTooltipText": "Scroll to bottom",
+  "scrollCursorTooltipText": "Scroll to cursor position",
+  "enableSurfingPlugin": false,
+  "resizeButton": 1
+}

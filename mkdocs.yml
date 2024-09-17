@@ -10,6 +10,8 @@ nav:
   - 主页:
       - 00. 简介: index.md
       - 01. 贡献指南: 00. home_page/01. contribution_guidelines.md
+      - 02. 提交模板:
+        - 00. 课程提交模板: 00. home_page/02. submission-template/00. course_submission_template.md
   - 课程资源:  
       - 00. 简介: 01. course_resources/00. introduction.md
       - 01. 经验分享: 01. course_resources/01. experience_sharing.md
@@ -53,6 +55,8 @@ theme:
     - navigation.footer
     - toc.follow
     - search.highlight
+    - content.code.copy
+    - content.code.annotate
   palette: 
 
     # Palette toggle for automatic mode
@@ -73,7 +77,7 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       primary: teal
-      accent: custom
+      accent: cyan
       scheme: slate
       toggle:
         icon: material/toggle-switch-off-outline
@@ -96,6 +100,15 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: True
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      linenums: true
+      linenums_style: pymdownx.inline
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 extra_css:
   - stylesheets/extra.css

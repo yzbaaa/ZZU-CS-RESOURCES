@@ -1,0 +1,142 @@
+{
+  "outline:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "F"
+    }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "D"
+    }
+  ],
+  "workspace:split-vertical": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "D"
+    }
+  ],
+  "obsidian-linter:paste-as-plain-text": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "V"
+    }
+  ],
+  "editor:toggle-inline-math": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "M"
+    }
+  ],
+  "editor:insert-codeblock": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "\\"
+    }
+  ],
+  "editor:toggle-code": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "I"
+    }
+  ],
+  "editor:insert-mathblock": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": ","
+    }
+  ],
+  "workspace:goto-tab-1": [],
+  "workspace:goto-tab-2": [],
+  "workspace:goto-tab-3": [],
+  "workspace:goto-tab-4": [],
+  "workspace:goto-tab-5": [],
+  "workspace:goto-tab-6": [],
+  "obsidian-dictionary-plugin:dictionary-open-view": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "E"
+    }
+  ],
+  "window:zoom-in": [
+    {
+      "modifiers": [
+        "Mod",
+        "Meta"
+      ],
+      "key": "+"
+    }
+  ],
+  "window:zoom-out": [
+    {
+      "modifiers": [
+        "Mod",
+        "Meta"
+      ],
+      "key": "-"
+    }
+  ],
+  "editor:toggle-blockquote": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "."
+    }
+  ],
+  "editor:toggle-bullet-list": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Q"
+    }
+  ],
+  "Enhanced editing:internal-link2": [],
+  "editor:toggle-numbered-list": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "E"
+    }
+  ]
+}

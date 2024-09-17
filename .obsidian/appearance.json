@@ -1,3 +1,6 @@
 {
-  "cssTheme": "Blue Topaz"
+  "accentColor": "#097fc8",
+  "cssTheme": "Blue Topaz",
+  "baseFontSize": 20,
+  "translucency": false
 }

@@ -1,0 +1,35 @@
+{
+  "showGettingStartedBanner": false,
+  "hasMigratedDailyNoteSettings": false,
+  "hasMigratedWeeklyNoteSettings": false,
+  "daily": {
+    "format": "",
+    "template": "",
+    "folder": "",
+    "enabled": false
+  },
+  "weekly": {
+    "format": "gggg-wo",
+    "template": "09 复盘/templates/每周模板.md",
+    "folder": "09 复盘/02 周复盘",
+    "enabled": true
+  },
+  "monthly": {
+    "format": "",
+    "template": "",
+    "folder": "",
+    "enabled": true
+  },
+  "quarterly": {
+    "format": "",
+    "template": "",
+    "folder": "",
+    "enabled": true
+  },
+  "yearly": {
+    "format": "",
+    "template": "",
+    "folder": "",
+    "enabled": true
+  }
+}
