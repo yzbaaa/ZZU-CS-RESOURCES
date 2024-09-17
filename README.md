@@ -4,7 +4,7 @@
 
 ## 跳转
 
-- [ZZU计智学习指南]([url](https://yzbaaa.github.io/ZZU-CS-RESOURCES/))
+- [ZZU计智学习指南](https://yzbaaa.github.io/ZZU-CS-RESOURCES)
 - [ZZU-CS-Courses-Resources](https://github.com/yzbaaa/ZZU-CS-Courses-Resources)
 
 ## 联系作者
