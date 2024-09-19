@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "991f46bb48b8e5f4",
+        "id": "ff9ce67fe3ec8a0c",
         "type": "tabs",
         "children": [
           {
-            "id": "cc735c64c68161fc",
+            "id": "0d35c78644d0524a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/01. course_resources/02. academic_plan.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -101,7 +97,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/01. course_resources/02. academic_plan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/01. course_resources/02. academic_plan.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,9 +134,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/01. course_resources/02. academic_plan.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -167,8 +159,11 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "cc735c64c68161fc",
+  "active": "0d35c78644d0524a",
   "lastOpenFiles": [
+    "docs/index.md",
+    "README.md",
+    "docs/01. course_resources/02. academic_plan.md",
     "site/search/search_index.json",
     "site/search",
     "site/assets/javascripts/glightbox.min.js",
@@ -179,7 +174,6 @@
     "site/06. self-study_resources/01. recommendations",
     "site/06. self-study_resources",
     "site/05. postgraduate_entrance_examination/02. F&Q/index.html",
-    "site/05. postgraduate_entrance_examination/01. experience_sharing/index.html",
     "site/images/favicon.png",
     "site/assets/images/favicon.png",
     "site/assets/Pasted image 20240914180934.png",
@@ -187,13 +181,10 @@
     "docs/01. course_resources/01. experience_sharing.md",
     "docs/01. course_resources/03. general_education_courses.md",
     "docs/01. course_resources/05. professional_basic_courses.md",
-    "docs/01. course_resources/02. academic_plan.md",
     "docs/01. course_resources/00. introduction.md",
     "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
-    "docs/index.md",
     "docs/01. course_resources/08. F&Q.md",
     "docs/01. course_resources/07. professional_elective.md",
-    "README.md",
     "docs/00. home_page/02. submission-template/00. course_submission_template.md",
     "docs/00. home_page/01. contribution_guidelines.md",
     "docs/01. course_resources/06. professional_compulsory.md",
