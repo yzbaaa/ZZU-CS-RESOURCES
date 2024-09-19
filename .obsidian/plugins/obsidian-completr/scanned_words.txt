@@ -97481,6 +97481,7 @@ boolean
 bzdt
 bWqXb
 bIEQ
+basic
 hash
 hypotenuse
 higher
