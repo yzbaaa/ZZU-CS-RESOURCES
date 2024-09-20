@@ -27,8 +27,8 @@ nav:
       - 01. 常见问题: 02. research/01. F&Q.md
   - 竞赛: 
       - 00. 简介: 03. contest/00. introduction.md
-      - 01. 实验室宣传: 03. contest/01. lab_publicity.md
-      - 02. 常见问题: 03. contest/02. F&Q.md
+      - 01. 常见问题: 03. contest/01. F&Q.md
+      - 02. 常见竞赛: 03. contest/02. popular_contests.md
   - 保研: 
       - 00. 简介: 04. postgraduate_recommendation/00. introduction.md
       - 01. 经验分享: 04. postgraduate_recommendation/01. experience_sharing.md
@@ -40,6 +40,9 @@ nav:
   - 自学资源: 
       - 00. 简介: 06. self-study_resources/00. introduction.md
       - 01. 推荐: 06. self-study_resources/01. recommendations.md
+  - 实验室:
+      - 00. 简介: 07. labs/00. introduction.md
+      - 01. ACM-ICPC 实验室: 07. labs/01. ACM-ICPC-Lab.md
 
 theme:
   language: zh

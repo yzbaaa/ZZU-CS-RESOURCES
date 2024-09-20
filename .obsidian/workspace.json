@@ -11,8 +11,12 @@
             "id": "0d35c78644d0524a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "docs/07. labs/00. introduction.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -97,6 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/07. labs/00. introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/07. labs/00. introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +140,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/07. labs/00. introduction.md"
+              }
             }
           }
         ]
@@ -159,8 +167,19 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "60fe70b3b4e82a29",
+  "active": "0d35c78644d0524a",
   "lastOpenFiles": [
+    "docs/03. contest/02. popular_contests.md",
+    "docs/07. labs/01. ACM-ICPC-Lab.md",
+    "docs/02. research/00. introduction.md",
+    "docs/07. labs/00. introduction.md",
+    "docs/03. contest/00. introduction.md",
+    "docs/03. contest/01. F&Q.md",
+    "docs/03. contest/01. lab_publicity.md",
+    "docs/01. course_resources/01. experience_sharing.md",
+    "docs/07. labs",
+    "docs/08. labs",
+    "docs/01. course_resources/02. academic_plan.md",
     "site/search/search_index.json",
     "site/search",
     "site/assets/javascripts/glightbox.min.js",
@@ -169,17 +188,12 @@
     "site/06. self-study_resources/00. introduction/index.html",
     "site/06. self-study_resources/01. recommendations",
     "site/06. self-study_resources/00. introduction",
-    "site/06. self-study_resources",
-    "site/05. postgraduate_entrance_examination/02. F&Q/index.html",
-    "site/05. postgraduate_entrance_examination/01. experience_sharing/index.html",
     "site/images/favicon.png",
     "site/assets/images/favicon.png",
     "site/assets/logo.png",
     "site/assets/Pasted image 20240914180934.png",
     "docs/index.md",
     "README.md",
-    "docs/01. course_resources/02. academic_plan.md",
-    "docs/01. course_resources/01. experience_sharing.md",
     "docs/01. course_resources/03. general_education_courses.md",
     "docs/01. course_resources/05. professional_basic_courses.md",
     "docs/01. course_resources/00. introduction.md",
@@ -197,12 +211,6 @@
     "00 attachment/Pasted image 20240915163639.png",
     "01 计划/09 进度.md",
     "01 计划/大一寒假.md",
-    "01 计划/02 大一暑假.md",
-    "01 计划/00 大学计划.md",
-    "01 计划/01 大一寒假.md",
-    "02 算法整理/00 待学习.md",
-    "02 算法整理/02 枚举.md",
-    "02 算法整理/01 高精度.md",
     "00 attachment/041E7E22.png",
     "00 attachment/Pasted image 20240912152958.png",
     "00 attachment/Pasted image 20240912152936.png",
