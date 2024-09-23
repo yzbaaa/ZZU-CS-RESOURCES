@@ -12345,6 +12345,7 @@ DDd
 DNuG
 Doqp
 DBU
+DEFCON
 true
 tuple
 tie
@@ -167215,6 +167216,7 @@ RRRr
 RRR
 RSS
 Request
+REVERSE
 Error
 Edge
 Extended
@@ -226977,6 +226979,7 @@ PYk
 PJfM
 Pyy
 Pull
+PWN
 Cycle
 Common
 Conquer
@@ -232755,6 +232758,9 @@ CCCn
 CIED
 CNr
 Cab
+CTF
+Capture
+CRYPTO
 First
 Firth
 Floyd
@@ -239217,6 +239223,7 @@ FGmQ
 FgG
 FJbL
 FIDATx
+Flag
 Tree
 Triangular
 The
@@ -245408,6 +245415,7 @@ TVlS
 TjZ
 TTr
 Tgp
+Tools
 Minimum
 MAXN
 Mask
@@ -252214,6 +252222,7 @@ MWU
 MlZ
 MGw
 MMMlK
+MISC
 Kruskal
 Koch
 KGgoAAAANSUhEUgAABwkAAAPoCAYAAAAlWsEpAAAgAElEQVR
@@ -291644,6 +291653,7 @@ where
 within
 workflow
 wqcf
+windows
 We
 WA
 WB
@@ -298057,6 +298067,7 @@ WTT
 WBU
 WhZA
 WGH
+WEB
 xc
 xi
 xdq

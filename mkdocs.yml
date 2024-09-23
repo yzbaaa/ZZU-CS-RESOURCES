@@ -43,6 +43,7 @@ nav:
   - 实验室:
       - 00. 简介: 07. labs/00. introduction.md
       - 01. ACM-ICPC 实验室: 07. labs/01. ACM-ICPC-Lab.md
+      - 02. 主校区网络安全实验室: 07. labs/02. cybersecurity lab.md
 
 theme:
   language: zh
