@@ -37,10 +37,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/01. course_resources/00. introduction.md",
+                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "a09985b7a917387c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
         ],
@@ -126,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/01. course_resources/00. introduction.md",
+                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/01. course_resources/00. introduction.md",
+                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/01. course_resources/00. introduction.md"
+                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md"
               }
             }
           }
@@ -194,7 +202,11 @@
   },
   "active": "c6d43189c1af42f4",
   "lastOpenFiles": [
+    "docs/01. course_resources/05. professional_basic_courses.md",
+    "docs/01. course_resources/06. professional_compulsory.md",
+    "docs/01. course_resources/02. academic_plan.md",
     "docs/00. home_page/02. submission-template/00. course_submission_template.md",
+    "docs/01. course_resources/00. introduction.md",
     "site/search/search_index.json",
     "site/search",
     "site/assets/javascripts/glightbox.min.js",
@@ -210,15 +222,12 @@
     "site/assets/logo.png",
     "site/assets/Pasted image 20240914180934.png",
     "docs/00. home_page/01. contribution_guidelines.md",
-    "docs/01. course_resources/00. introduction.md",
     "README.md",
     "docs/07. labs/01. ACM Lab.md",
     "docs/07. labs/02. cybersecurity lab.md",
     "docs/03. contest/01. F&Q.md",
     "docs/07. labs/00. introduction.md",
-    "docs/01. course_resources/02. academic_plan.md",
     "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
-    "docs/01. course_resources/05. professional_basic_courses.md",
     "docs/01. course_resources/03. general_education_courses.md",
     "1B26094A.gif",
     "().md",
