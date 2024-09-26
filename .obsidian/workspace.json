@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/07. labs/02. cybersecurity lab.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -30,8 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c6d43189c1af42f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/01. course_resources/00. introduction.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -113,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/07. labs/02. cybersecurity lab.md",
+                "file": "docs/01. course_resources/00. introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/07. labs/02. cybersecurity lab.md",
+                "file": "docs/01. course_resources/00. introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/07. labs/02. cybersecurity lab.md"
+                "file": "docs/01. course_resources/00. introduction.md"
               }
             }
           }
@@ -179,41 +192,41 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "cbf8472f5c898f71",
+  "active": "c6d43189c1af42f4",
   "lastOpenFiles": [
-    "docs/03. contest/01. F&Q.md",
-    "docs/07. labs/02. cybersecurity lab.md",
-    "docs/07. labs/00. introduction.md",
-    "docs/07. labs/01. ACM-ICPC-Lab.md",
-    "docs/01. course_resources/02. academic_plan.md",
+    "docs/00. home_page/02. submission-template/00. course_submission_template.md",
     "site/search/search_index.json",
     "site/search",
     "site/assets/javascripts/glightbox.min.js",
+    "site/assets/stylesheets/palette.06af60db.min.css.map",
+    "site/assets/stylesheets/palette.06af60db.min.css",
+    "site/assets/stylesheets/main.35f28582.min.css.map",
+    "site/assets/stylesheets/main.35f28582.min.css",
     "site/assets/stylesheets/glightbox.min.css",
-    "site/07. labs/00. introduction/index.html",
-    "site/07. labs/01. ACM-ICPC-Lab/index.html",
-    "site/07. labs/00. introduction",
-    "site/07. labs/01. ACM-ICPC-Lab",
-    "site/07. labs",
-    "site/06. self-study_resources/00. introduction/index.html",
+    "site/assets/stylesheets",
+    "site/07. labs/01. ACM Lab/index.html",
     "site/images/favicon.png",
     "site/assets/images/favicon.png",
-    "site/assets/Pasted image 20240914180934.png",
     "site/assets/logo.png",
+    "site/assets/Pasted image 20240914180934.png",
+    "docs/00. home_page/01. contribution_guidelines.md",
+    "docs/01. course_resources/00. introduction.md",
+    "README.md",
+    "docs/07. labs/01. ACM Lab.md",
+    "docs/07. labs/02. cybersecurity lab.md",
+    "docs/03. contest/01. F&Q.md",
+    "docs/07. labs/00. introduction.md",
+    "docs/01. course_resources/02. academic_plan.md",
     "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
     "docs/01. course_resources/05. professional_basic_courses.md",
     "docs/01. course_resources/03. general_education_courses.md",
     "1B26094A.gif",
     "().md",
     "【《高等数学》同济版.md",
-    "docs/01. course_resources/00. introduction.md",
     "docs/01. course_resources/01. experience_sharing.md",
-    "README.md",
     "docs/03. contest/02. popular_contests.md",
     "docs/index.md",
     "未命名.canvas",
-    "docs/00. home_page/01. contribution_guidelines.md",
-    "docs/00. home_page/02. submission-template/00. course_submission_template.md",
     "01 计划/03 大二上.md",
     "12 其他/课程共享计划/git&github入门.md",
     "12 其他/零碎问题简答.md",
@@ -224,7 +237,6 @@
     "01 计划/大一寒假.md",
     "01 计划/02 大一暑假.md",
     "01 计划/00 大学计划.md",
-    "01 计划/01 大一寒假.md",
     "00 attachment/041E7E22.png",
     "00 attachment/Pasted image 20240912152958.png",
     "00 attachment/Pasted image 20240912152936.png",
