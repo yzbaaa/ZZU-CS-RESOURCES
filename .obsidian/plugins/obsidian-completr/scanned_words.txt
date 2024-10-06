@@ -6086,6 +6086,7 @@ SCDc
 SRV
 SqcgG
 SSH
+Shopee
 DEV
 Differential
 DP
@@ -12346,6 +12347,7 @@ DNuG
 Doqp
 DBU
 DEFCON
+Duisburg
 true
 tuple
 tie
@@ -40524,6 +40526,9 @@ commit
 checkout
 clone
 courses
+clip
+codeforces
+contest
 vector
 value
 void
@@ -65268,6 +65273,7 @@ lWQ
 lAA
 lNHH
 localhost
+luogu
 set
 stack
 string
@@ -77891,6 +77897,7 @@ mWf
 mlhh
 mkdocs
 mathematics
+msohtmlclip
 queue
 queues
 quick
@@ -103465,6 +103472,7 @@ hMM
 hWte
 hjjx
 histories
+http
 int
 insert
 iterator
@@ -167220,6 +167228,7 @@ RRR
 RSS
 Request
 REVERSE
+Rating
 Error
 Edge
 Extended
@@ -173369,6 +173378,7 @@ EpGNY
 EKm
 EcLe
 EOc
+Essen
 nth
 next
 notion
@@ -191046,6 +191056,9 @@ AoS
 APfj
 Afw
 Ahh
+AppData
+ACMer
+Atcoder
 LCS
 LL
 LIS
@@ -197042,6 +197055,8 @@ LYH
 LDyy
 LVIZ
 LQJ
+Legendary
+Ludwig
 Graph
 GCD
 Greatest
@@ -204008,6 +204023,7 @@ GPA
 Google
 GPT
 Git
+Grandmaster
 Node
 Note
 Nullspace
@@ -232764,6 +232780,10 @@ Cab
 CTF
 Capture
 CRYPTO
+Collegiate
+Contest
+CCPC
+Codeforces
 First
 Firth
 Floyd
@@ -239227,6 +239247,7 @@ FgG
 FJbL
 FIDATx
 Flag
+Finals
 Tree
 Triangular
 The
@@ -245419,6 +245440,7 @@ TjZ
 TTr
 Tgp
 Tools
+Temp
 Minimum
 MAXN
 Mask
@@ -252226,6 +252248,7 @@ MlZ
 MGw
 MMMlK
 MISC
+Maximilian
 Kruskal
 Koch
 KGgoAAAANSUhEUgAABwkAAAPoCAYAAAAlWsEpAAAgAElEQVR
@@ -264554,6 +264577,7 @@ IOvv
 IJJr
 III
 IEND
+International
 Out
 Orthogonal
 Orthonormal
@@ -274641,6 +274665,7 @@ OpenAI
 OFp
 Owg
 OMF
+Online
 Queue
 QU
 QEDUk
@@ -298071,6 +298096,7 @@ WBU
 WhZA
 WGH
 WEB
+World
 xc
 xi
 xdq
@@ -316796,6 +316822,9 @@ UUU
 Ukn
 UVRz
 URL
+Users
+UCAS
+Universität
 Jordan
 JmNn
 JDEOyWJd
@@ -322716,6 +322745,7 @@ Javascript
 Javadoc
 JEd
 JJJ
+Judge
 XON
 XOFF
 Xi
@@ -342931,6 +342961,7 @@ jddd
 jva
 jIDH
 jPqT
+jpg
 ZxopJczMzMzM
 ZxqSkISZmZmZna
 Zm
@@ -349579,6 +349610,7 @@ Zhiqian
 ZZUACM
 ZZz
 ZmN
+Zürich
 yDkzHA
 ynU
 ynLkrdycnJCv
