@@ -12,11 +12,4 @@
 - 邮箱：aiyaozb@stu.zzu.edu.cn
 - 微信：a59fe5（记得说明来由）
 
-## 加入我们
-
-可以在此群中讨论网站的改进建议，也可以直接参与到网站的长期维护中。
-
-<figure markdown="span">
-  ![](https://pic.imgdb.cn/item/67028d7fd29ded1a8c4cbab2.jpg){ width="250" }
-</figure>
 
