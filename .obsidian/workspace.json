@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9759803db870f555",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -101,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/04. postgraduate_recommendation/01. experience_sharing.md",
+                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/04. postgraduate_recommendation/01. experience_sharing.md",
+                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/04. postgraduate_recommendation/01. experience_sharing.md"
+                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md"
               }
             }
           }
@@ -167,8 +180,10 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "cbf8472f5c898f71",
+  "active": "9759803db870f555",
   "lastOpenFiles": [
+    "docs/04. postgraduate_recommendation/01. experience_sharing.md",
+    "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
     "docs/04. postgraduate_recommendation/00. introduction.md",
     "docs/05. postgraduate_entrance_examination/00. introduction.md",
     "docs/05. postgraduate_entrance_examination/01. experience_sharing.md",
@@ -177,11 +192,9 @@
     "docs/03. contest/00. introduction.md",
     "docs/03. contest/01. F&Q.md",
     "docs/index.md",
-    "docs/04. postgraduate_recommendation/01. experience_sharing.md",
     "README.md",
     "docs/07. labs/01. ACM Lab.md",
     "docs/07. labs/00. introduction.md",
-    "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
     "docs/01. course_resources/08. F&Q.md",
     "docs/01. course_resources/02. academic_plan.md",
     "docs/01. course_resources/01. experience_sharing.md",
