@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
+                "file": "docs/01. course_resources/00. introduction.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
+                "file": "docs/01. course_resources/00. introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
+                "file": "docs/01. course_resources/00. introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md"
+                "file": "docs/01. course_resources/00. introduction.md"
               }
             }
           }
@@ -182,19 +182,26 @@
   },
   "active": "9759803db870f555",
   "lastOpenFiles": [
-    "docs/04. postgraduate_recommendation/01. experience_sharing.md",
-    "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
-    "docs/04. postgraduate_recommendation/00. introduction.md",
-    "docs/05. postgraduate_entrance_examination/00. introduction.md",
-    "docs/05. postgraduate_entrance_examination/01. experience_sharing.md",
-    "docs/06. self-study_resources/01. recommendations.md",
-    "docs/06. self-study_resources/00. introduction.md",
+    "docs/02. research/00. introduction.md",
+    "docs/02. research/01. F&Q.md",
     "docs/03. contest/00. introduction.md",
-    "docs/03. contest/01. F&Q.md",
-    "docs/index.md",
-    "README.md",
+    "docs/01. course_resources/00. introduction.md",
+    "docs/00. home_page/02. submission-template/00. course_submission_template.md",
+    "docs/04. postgraduate_recommendation/01. experience_sharing.md",
     "docs/07. labs/01. ACM Lab.md",
     "docs/07. labs/00. introduction.md",
+    "docs/06. self-study_resources/01. recommendations.md",
+    "docs/06. self-study_resources/00. introduction.md",
+    "docs/05. postgraduate_entrance_examination/00. introduction.md",
+    "docs/05. postgraduate_entrance_examination/01. experience_sharing.md",
+    "docs/05. postgraduate_entrance_examination/02. F&Q.md",
+    "docs/04. postgraduate_recommendation/02. F&Q.md",
+    "docs/04. postgraduate_recommendation/00. introduction.md",
+    "docs/03. contest/02. popular_contests.md",
+    "docs/03. contest/01. F&Q.md",
+    "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
+    "docs/index.md",
+    "README.md",
     "docs/01. course_resources/08. F&Q.md",
     "docs/01. course_resources/02. academic_plan.md",
     "docs/01. course_resources/01. experience_sharing.md",
@@ -221,13 +228,6 @@
     "docs/07. labs/02. cybersecurity lab.md",
     "docs/01. course_resources/05. professional_basic_courses.md",
     "docs/01. course_resources/06. professional_compulsory.md",
-    "docs/00. home_page/02. submission-template/00. course_submission_template.md",
-    "docs/01. course_resources/00. introduction.md",
-    "docs/00. home_page/01. contribution_guidelines.md",
-    "docs/01. course_resources/03. general_education_courses.md",
-    "().md",
-    "【《高等数学》同济版.md",
-    "docs/03. contest/02. popular_contests.md",
     "未命名.canvas",
     "02 算法整理/00 算法导图.canvas",
     "02 算法整理/未命名.canvas"
