@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/01. course_resources/00. introduction.md",
+                "file": "docs/07. labs/01. ACM Lab.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/01. course_resources/00. introduction.md",
+                "file": "docs/07. labs/01. ACM Lab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/01. course_resources/00. introduction.md",
+                "file": "docs/07. labs/01. ACM Lab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/01. course_resources/00. introduction.md"
+                "file": "docs/07. labs/01. ACM Lab.md"
               }
             }
           }
@@ -182,14 +182,31 @@
   },
   "active": "9759803db870f555",
   "lastOpenFiles": [
+    "site/search/search_index.json",
+    "site/search",
+    "site/assets/javascripts/glightbox.min.js",
+    "site/assets/stylesheets/palette.06af60db.min.css",
+    "site/assets/stylesheets/main.35f28582.min.css.map",
+    "site/assets/stylesheets/palette.06af60db.min.css.map",
+    "site/assets/stylesheets/main.35f28582.min.css",
+    "site/assets/stylesheets/glightbox.min.css",
+    "site/assets/stylesheets",
+    "site/07. labs/02. cybersecurity lab/index.html",
+    "site/07. labs/02. cybersecurity lab",
+    "site/images/favicon.png",
+    "site/assets/images/favicon.png",
+    "site/assets/logo.png",
+    "site/assets/Pasted image 20240914180934.png",
+    "zzuacm.wyqz.top.md",
+    "docs/07. labs/01. ACM Lab.md",
+    "docs/07. labs/00. introduction.md",
+    "docs/07. labs/02. cybersecurity lab.md",
+    "docs/01. course_resources/00. introduction.md",
     "docs/02. research/00. introduction.md",
     "docs/02. research/01. F&Q.md",
     "docs/03. contest/00. introduction.md",
-    "docs/01. course_resources/00. introduction.md",
     "docs/00. home_page/02. submission-template/00. course_submission_template.md",
     "docs/04. postgraduate_recommendation/01. experience_sharing.md",
-    "docs/07. labs/01. ACM Lab.md",
-    "docs/07. labs/00. introduction.md",
     "docs/06. self-study_resources/01. recommendations.md",
     "docs/06. self-study_resources/00. introduction.md",
     "docs/05. postgraduate_entrance_examination/00. introduction.md",
@@ -205,29 +222,12 @@
     "docs/01. course_resources/08. F&Q.md",
     "docs/01. course_resources/02. academic_plan.md",
     "docs/01. course_resources/01. experience_sharing.md",
-    "site/search/search_index.json",
-    "site/search",
-    "site/assets/javascripts/glightbox.min.js",
-    "site/assets/stylesheets/glightbox.min.css",
-    "site/07. labs/02. cybersecurity lab/index.html",
-    "site/07. labs/02. cybersecurity lab",
-    "site/07. labs/01. ACM Lab/index.html",
-    "site/07. labs/01. ACM Lab",
-    "site/07. labs/00. introduction/index.html",
-    "site/07. labs/00. introduction",
-    "site/images/favicon.png",
-    "site/assets/images/favicon.png",
-    "site/assets/Pasted image 20240914180934.png",
-    "site/assets/logo.png",
     "assets/07. labs/01. ACM Lab/Pasted image 20240914180934.png",
     "assets/07. labs/01. ACM Lab/1728216683467.png",
     "assets/07. labs/01. ACM Lab/1728216675113.png",
     "assets/07. labs/01. ACM Lab/1728216662102.png",
     "assets/07. labs/01. ACM Lab/1728216647435.png",
     "assets/07. labs/01. ACM Lab/1728216635293.png",
-    "docs/07. labs/02. cybersecurity lab.md",
-    "docs/01. course_resources/05. professional_basic_courses.md",
-    "docs/01. course_resources/06. professional_compulsory.md",
     "未命名.canvas",
     "02 算法整理/00 算法导图.canvas",
     "02 算法整理/未命名.canvas"
