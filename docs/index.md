@@ -33,5 +33,5 @@ title: ZZU计智学习指南
 可以在此群（群号：293512726）中讨论网站的改进建议，也可以直接参与到网站的长期维护中。
 
 <figure markdown="span">
-  ![](https://s21.ax1x.com/2024/10/09/pAJQ2rQ.jpg){ width="400" }
+  ![](https://s2.loli.net/2024/10/11/McdxeqNEH9rhQZL.jpg){ width="400" }
 </figure>
