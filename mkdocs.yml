@@ -7,11 +7,14 @@ repo_name: ZZU-CS-RESOURCES
 copyright: Copyright &copy; 2024-present <a href="https://github.com/yzbaaa" target="_blank" rel="noopener noreferrer">yzbaaa</a>
 
 nav:
-  - 主页:
+  - 主页: 
       - 00. 简介: index.md
-      - 01. 贡献指南: 00. home_page/01. contribution_guidelines.md
-      - 02. 提交模板:
-        - 00. 课程提交模板: 00. home_page/02. submission-template/00. course_submission_template.md
+      - 01. 使用指南: 00. home_page/01. usage_guidelines.md
+      - 02. 贡献指南: 
+        - 00. 基础教程: 00. home_page/02. contribution_guidelines/00. basic.md
+        - 01. 进阶教程: 00. home_page/02. contribution_guidelines/01. advanced.md
+      - 03. 提交模板:
+        - 00. 课程提交模板: 00. home_page/03. submission-template/00. course_submission_template.md
   - 课程资源:  
       - 00. 简介: 01. course_resources/00. introduction.md
       - 01. 经验分享: 01. course_resources/01. experience_sharing.md

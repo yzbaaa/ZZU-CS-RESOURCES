@@ -6088,6 +6088,7 @@ SqcgG
 SSH
 Shopee
 Science
+Smith
 DEV
 Differential
 DP
@@ -30557,6 +30558,8 @@ fzIV
 fork
 fatal
 fundamentals
+firstName
+footnote
 const
 char
 cin
@@ -65276,6 +65279,7 @@ lNHH
 localhost
 luogu
 labs
+lastName
 set
 stack
 string
@@ -71132,6 +71136,7 @@ sfY
 sCf
 sfp
 stu
+sentence
 multiset
 map
 multimap
@@ -204027,6 +204032,7 @@ Google
 GPT
 Git
 Grandmaster
+Github
 Node
 Note
 Nullspace
@@ -298102,6 +298108,7 @@ WhZA
 WGH
 WEB
 World
+Wikipedia
 xc
 xi
 xdq
@@ -322751,6 +322758,7 @@ Javadoc
 JEd
 JJJ
 Judge
+John
 XON
 XOFF
 Xi

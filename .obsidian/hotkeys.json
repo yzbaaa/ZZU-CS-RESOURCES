@@ -62,15 +62,6 @@
       "key": "\\"
     }
   ],
-  "editor:toggle-code": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "I"
-    }
-  ],
   "editor:insert-mathblock": [
     {
       "modifiers": [
@@ -137,6 +128,15 @@
         "Alt"
       ],
       "key": "E"
+    }
+  ],
+  "editor:toggle-code": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "I"
     }
   ]
 }

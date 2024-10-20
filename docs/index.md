@@ -28,6 +28,14 @@ title: ZZU计智学习指南
 - 邮箱：aiyaozb@stu.zzu.edu.cn
 - 微信：a59fe5（记得说明来由）
 
+## 问题 or 建议
+
+这是一个长期问卷。
+
+<figure markdown="span">
+  ![](https://s21.ax1x.com/2024/10/20/pAaeqAA.png){ width="200" }
+</figure>
+
 ## 加入我们
 
 可以在此群（群号：293512726）中讨论网站的改进建议，也可以直接参与到网站的长期维护中。
