@@ -4,77 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9ecc68a791bb85cb",
+        "id": "6e3290d54628e777",
         "type": "tabs",
         "children": [
           {
-            "id": "cbf8472f5c898f71",
+            "id": "e69649e69b6d851d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/00. home_page/02. contribution_guidelines/00. basic.md",
+                "file": "docs/04. postgraduate_recommendation/01. experience_sharing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00. basic"
-            }
-          },
-          {
-            "id": "c65e252fd1ea0cf8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/01. course_resources/08. F&Q.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "08. F&Q"
-            }
-          },
-          {
-            "id": "303fc3199a5bf969",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/01. course_resources/00. introduction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00. introduction"
-            }
-          },
-          {
-            "id": "0d201bfc3965696d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/01. course_resources/00. introduction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00. introduction"
-            }
-          },
-          {
-            "id": "fe762e2db1d94feb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
+              "title": "01. experience_sharing"
             }
           }
         ]
@@ -169,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/00. home_page/02. contribution_guidelines/00. basic.md",
+                "file": "docs/04. postgraduate_recommendation/01. experience_sharing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +123,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "00. basic 的反向链接列表"
+              "title": "01. experience_sharing 的反向链接列表"
             }
           },
           {
@@ -188,12 +132,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/00. home_page/02. contribution_guidelines/00. basic.md",
+                "file": "docs/04. postgraduate_recommendation/01. experience_sharing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "00. basic 的出链列表"
+              "title": "01. experience_sharing 的出链列表"
             }
           },
           {
@@ -215,10 +159,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/00. home_page/02. contribution_guidelines/00. basic.md"
+                "file": "docs/04. postgraduate_recommendation/01. experience_sharing.md"
               },
               "icon": "lucide-list",
-              "title": "00. basic 的大纲"
+              "title": "01. experience_sharing 的大纲"
             }
           }
         ]
@@ -242,18 +186,27 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "cbf8472f5c898f71",
+  "active": "e69649e69b6d851d",
   "lastOpenFiles": [
-    "docs/00. home_page/01. usage_guidelines.md",
-    "docs/01. course_resources/00. introduction.md",
-    "docs/01. course_resources/08. F&Q.md",
-    "docs/01. course_resources/02. academic_plan.md",
-    "docs/03. contest/00. introduction.md",
+    "docs/04. postgraduate_recommendation/02. F&Q.md",
+    "docs/04. postgraduate_recommendation/01. experience_sharing.md",
+    "docs/04. postgraduate_recommendation/00. introduction.md",
     "docs/00. home_page/03. submission-template/00. course_submission_template.md",
-    "docs/00. home_page/02. contribution_guidelines/00. basic.md",
-    "docs/index.md",
-    "docs/00. home_page/02. contribution_guidelines/01. advanced.md",
+    "docs/01. course_resources/02. academic_plan.md",
     "docs/01. course_resources/05. professional_basic_courses.md",
+    "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
+    "docs/01. course_resources/06. professional_core.md",
+    "docs/01. course_resources/03. general_education_courses.md",
+    "docs/00. home_page/02. contribution_guidelines/00. basic.md",
+    "docs/01. course_resources/01. experience_sharing.md",
+    "docs/01. course_resources/00. introduction.md",
+    "docs/index.md",
+    "docs/00. home_page/01. usage_guidelines.md",
+    "().md",
+    "docs/02. research/00. introduction.md",
+    "docs/03. contest/00. introduction.md",
+    "docs/01. course_resources/08. F&Q.md",
+    "docs/00. home_page/02. contribution_guidelines/01. advanced.md",
     "docs/00. home_page/02. contribution_guidelines",
     "site/search/search_index.json",
     "site/search",
@@ -268,23 +221,14 @@
     "site/assets/images/favicon.png",
     "site/assets/Pasted image 20240914180934.png",
     "site/assets/logo.png",
-    "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
-    "docs/04. postgraduate_recommendation/01. experience_sharing.md",
-    "().md",
-    "docs/01. course_resources/06. professional_core.md",
     "[Harvard.md",
     "Pasted image 20241009233514.png",
-    "docs/01. course_resources/03. general_education_courses.md",
-    "docs/01. course_resources/01. experience_sharing.md",
-    "docs/02. research/00. introduction.md",
     "docs/07. labs/01. ACM Lab.md",
     "zzuacm.wyqz.top.md",
     "docs/07. labs/00. introduction.md",
     "docs/07. labs/02. cybersecurity lab.md",
     "docs/02. research/01. F&Q.md",
     "docs/06. self-study_resources/01. recommendations.md",
-    "docs/06. self-study_resources/00. introduction.md",
-    "docs/05. postgraduate_entrance_examination/00. introduction.md",
     "assets/07. labs/01. ACM Lab/Pasted image 20240914180934.png",
     "assets/07. labs/01. ACM Lab/1728216683467.png",
     "assets/07. labs/01. ACM Lab/1728216675113.png",
