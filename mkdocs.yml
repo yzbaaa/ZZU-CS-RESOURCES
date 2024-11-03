@@ -23,8 +23,9 @@ nav:
       - 04. 数理基础 & 英语: 01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md
       - 05. 专业基础: 01. course_resources/05. professional_basic_courses.md
       - 06. 专业核心: 01. course_resources/06. professional_core.md
-      - 07. 专业选修: 01. course_resources/07. professional_elective.md
-      - 08. 常见问题: 01. course_resources/08. F&Q.md
+      - 07. 专业拓展: 01. course_resources/07. professional_development.md
+      - 08. 专业实践: 01. course_resources/08. professional_practice.md
+      - 09. 常见问题: 01. course_resources/09. F&Q.md
   - 科研: 
       - 00. 简介: 02. research/00. introduction.md
       - 01. 常见问题: 02. research/01. F&Q.md
@@ -47,6 +48,10 @@ nav:
       - 00. 简介: 07. labs/00. introduction.md
       - 01. ACM 实验室: 07. labs/01. ACM Lab.md
       - 02. 主校区网络安全实验室: 07. labs/02. cybersecurity lab.md
+      - 03. RoboMaster 实验室: 07. labs/
+      - 04. AR-VR三维沉浸式实验室: 07. labs/
+      - 05. 双足机器人实验室: 07. labs/
+      - 06. 服务机器人实验室: 07. labs/
 
 theme:
   language: zh

@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e69649e69b6d851d",
+            "id": "51f36baa48f267a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/04. postgraduate_recommendation/01. experience_sharing.md",
+                "file": "docs/01. course_resources/08. professional_practice.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01. experience_sharing"
+              "title": "08. professional_practice"
             }
           }
         ]
@@ -186,26 +186,27 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "e69649e69b6d851d",
+  "active": "51f36baa48f267a1",
   "lastOpenFiles": [
-    "docs/04. postgraduate_recommendation/02. F&Q.md",
+    "docs/01. course_resources/02. academic_plan.md",
+    "docs/01. course_resources/08. professional_practice.md",
+    "docs/01. course_resources/01. experience_sharing.md",
+    "docs/index.md",
     "docs/04. postgraduate_recommendation/01. experience_sharing.md",
+    "docs/04. postgraduate_recommendation/02. F&Q.md",
     "docs/04. postgraduate_recommendation/00. introduction.md",
     "docs/00. home_page/03. submission-template/00. course_submission_template.md",
-    "docs/01. course_resources/02. academic_plan.md",
     "docs/01. course_resources/05. professional_basic_courses.md",
     "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
     "docs/01. course_resources/06. professional_core.md",
     "docs/01. course_resources/03. general_education_courses.md",
     "docs/00. home_page/02. contribution_guidelines/00. basic.md",
-    "docs/01. course_resources/01. experience_sharing.md",
     "docs/01. course_resources/00. introduction.md",
-    "docs/index.md",
     "docs/00. home_page/01. usage_guidelines.md",
     "().md",
     "docs/02. research/00. introduction.md",
     "docs/03. contest/00. introduction.md",
-    "docs/01. course_resources/08. F&Q.md",
+    "docs/01. course_resources/09. F&Q.md",
     "docs/00. home_page/02. contribution_guidelines/01. advanced.md",
     "docs/00. home_page/02. contribution_guidelines",
     "site/search/search_index.json",
@@ -228,7 +229,6 @@
     "docs/07. labs/00. introduction.md",
     "docs/07. labs/02. cybersecurity lab.md",
     "docs/02. research/01. F&Q.md",
-    "docs/06. self-study_resources/01. recommendations.md",
     "assets/07. labs/01. ACM Lab/Pasted image 20240914180934.png",
     "assets/07. labs/01. ACM Lab/1728216683467.png",
     "assets/07. labs/01. ACM Lab/1728216675113.png",

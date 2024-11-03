@@ -1,7 +1,8 @@
 {
   "accentColor": "#097fc8",
   "cssTheme": "Blue Topaz",
-  "baseFontSize": 20,
+  "baseFontSize": 16,
   "translucency": false,
-  "theme": "system"
+  "theme": "system",
+  "baseFontSizeAction": true
 }
