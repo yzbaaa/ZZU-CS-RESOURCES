@@ -6089,6 +6089,8 @@ SSH
 Shopee
 Science
 Smith
+Series
+SCI
 DEV
 Differential
 DP
@@ -12350,6 +12352,7 @@ Doqp
 DBU
 DEFCON
 Duisburg
+Designer
 true
 tuple
 tie
@@ -71137,6 +71140,7 @@ sCf
 sfp
 stu
 sentence
+solidworks
 multiset
 map
 multimap
@@ -109744,6 +109748,7 @@ ifUr
 iOD
 iMFa
 item
+iCAN
 unsigned
 unordered
 upper
@@ -167237,6 +167242,17 @@ RSS
 Request
 REVERSE
 Rating
+RoboMaster
+RMU
+RoboCon
+RoboTac
+RoboCup
+RAICOM
+Robomaster
+RoboCupAsia
+Robot
+RboCup
+ROS
 Error
 Edge
 Extended
@@ -173387,6 +173403,9 @@ EKm
 EcLe
 EOc
 Essen
+EKF
+Eldercare
+EldercareRobotChallengeDesignChallenge
 nth
 next
 notion
@@ -191067,6 +191086,8 @@ Ahh
 AppData
 ACMer
 Atcoder
+Altium
+AutoCAD
 LCS
 LL
 LIS
@@ -197066,6 +197087,8 @@ LQJ
 Legendary
 Ludwig
 Lab
+LQR
+LegendaryGrandmaster
 Graph
 GCD
 Greatest
@@ -204034,6 +204057,7 @@ GPT
 Git
 Grandmaster
 Github
+GPSR
 Node
 Note
 Nullspace
@@ -227009,6 +227033,7 @@ PJfM
 Pyy
 Pull
 PWN
+Pacific
 Cycle
 Common
 Conquer
@@ -232794,6 +232819,10 @@ Collegiate
 Contest
 CCPC
 Codeforces
+CAD
+CIMC
+CCTV
+Challenges
 First
 Firth
 Floyd
@@ -245452,6 +245481,9 @@ Tgp
 Tools
 Temp
 Third
+Tianjin
+Toumament
+Task
 Minimum
 MAXN
 Mask
@@ -252260,6 +252292,8 @@ MGw
 MMMlK
 MISC
 Maximilian
+Multisim
+Matlab
 Kruskal
 Koch
 KGgoAAAANSUhEUgAABwkAAAPoCAYAAAAlWsEpAAAgAElEQVR
@@ -264589,6 +264623,8 @@ IJJr
 III
 IEND
 International
+Invitational
+IJCAI
 Out
 Orthogonal
 Orthonormal
@@ -291695,6 +291731,7 @@ workflow
 wqcf
 windows
 wyqz
+whoiswho
 We
 WA
 WB
@@ -316839,6 +316876,7 @@ URL
 Users
 UCAS
 Universität
+Ubuntu
 Jordan
 JmNn
 JDEOyWJd

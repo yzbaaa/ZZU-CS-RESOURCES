@@ -46,12 +46,12 @@ nav:
       - 01. 推荐: 06. self-study_resources/01. recommendations.md
   - 实验室:
       - 00. 简介: 07. labs/00. introduction.md
-      - 01. ACM 实验室: 07. labs/01. ACM Lab.md
+      - 01. ACM 实验室: 07. labs/01. ACM lab.md
       - 02. 主校区网络安全实验室: 07. labs/02. cybersecurity lab.md
-      - 03. RoboMaster 实验室: 07. labs/
-      - 04. AR-VR三维沉浸式实验室: 07. labs/
-      - 05. 双足机器人实验室: 07. labs/
-      - 06. 服务机器人实验室: 07. labs/
+      - 03. RoboMaster 实验室: 07. labs/03. RoboMaster lab.md
+      - 04. AR-VR三维沉浸式实验室: 07. labs/04. AR&VR lab.md
+      - 05. 双足机器人实验室: 07. labs/05. Bipedal lab.md
+      - 06. 服务机器人实验室: 07. labs/06. SR lab.md
 
 theme:
   language: zh

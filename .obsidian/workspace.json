@@ -8,20 +8,45 @@
         "type": "tabs",
         "children": [
           {
-            "id": "51f36baa48f267a1",
+            "id": "86f4a92be9d0030f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/01. course_resources/08. professional_practice.md",
+                "file": "docs/07. labs/05. Bipedal lab.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08. professional_practice"
+              "title": "05. Bipedal lab"
+            }
+          },
+          {
+            "id": "b5bf4143e2e2c775",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/07. labs/06. SR lab.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "06. SR lab"
+            }
+          },
+          {
+            "id": "126c1b986d09da38",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,7 +113,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2c27e0f0cf8abf7c",
+            "id": "cb11f8e6f6786f9d",
             "type": "leaf",
             "state": {
               "type": "quiet-outline",
@@ -113,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/04. postgraduate_recommendation/01. experience_sharing.md",
+                "file": "docs/07. labs/06. SR lab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +148,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "01. experience_sharing 的反向链接列表"
+              "title": "06. SR lab 的反向链接列表"
             }
           },
           {
@@ -132,12 +157,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/04. postgraduate_recommendation/01. experience_sharing.md",
+                "file": "docs/07. labs/06. SR lab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "01. experience_sharing 的出链列表"
+              "title": "06. SR lab 的出链列表"
             }
           },
           {
@@ -159,10 +184,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/04. postgraduate_recommendation/01. experience_sharing.md"
+                "file": "docs/07. labs/06. SR lab.md"
               },
               "icon": "lucide-list",
-              "title": "01. experience_sharing 的大纲"
+              "title": "06. SR lab 的大纲"
             }
           }
         ]
@@ -186,10 +211,22 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "51f36baa48f267a1",
+  "active": "b5bf4143e2e2c775",
   "lastOpenFiles": [
-    "docs/01. course_resources/02. academic_plan.md",
+    "docs/07. labs/05. Bipedal lab.md",
+    "docs/07. labs/04. AR&VR lab.md",
+    "docs/07. labs/03. RoboMaster lab.md",
+    "docs/07. labs/02. cybersecurity lab.md",
+    "docs/07. labs/01. ACM lab.md",
+    "docs/07. labs/00. introduction.md",
+    "docs/07. labs/06. SR lab.md",
     "docs/01. course_resources/08. professional_practice.md",
+    "docs/07. labs/06. SR ab.md",
+    "docs/07. labs/05.Bipedal Lab.md",
+    "docs/07. labs/04.AR&VR Lab.md",
+    "docs/07. labs/03.RoboMaster Lab.md",
+    "docs/07. labs/06.SR Lab.md",
+    "docs/01. course_resources/02. academic_plan.md",
     "docs/01. course_resources/01. experience_sharing.md",
     "docs/index.md",
     "docs/04. postgraduate_recommendation/01. experience_sharing.md",
@@ -202,12 +239,6 @@
     "docs/01. course_resources/03. general_education_courses.md",
     "docs/00. home_page/02. contribution_guidelines/00. basic.md",
     "docs/01. course_resources/00. introduction.md",
-    "docs/00. home_page/01. usage_guidelines.md",
-    "().md",
-    "docs/02. research/00. introduction.md",
-    "docs/03. contest/00. introduction.md",
-    "docs/01. course_resources/09. F&Q.md",
-    "docs/00. home_page/02. contribution_guidelines/01. advanced.md",
     "docs/00. home_page/02. contribution_guidelines",
     "site/search/search_index.json",
     "site/search",
@@ -222,13 +253,7 @@
     "site/assets/images/favicon.png",
     "site/assets/Pasted image 20240914180934.png",
     "site/assets/logo.png",
-    "[Harvard.md",
     "Pasted image 20241009233514.png",
-    "docs/07. labs/01. ACM Lab.md",
-    "zzuacm.wyqz.top.md",
-    "docs/07. labs/00. introduction.md",
-    "docs/07. labs/02. cybersecurity lab.md",
-    "docs/02. research/01. F&Q.md",
     "assets/07. labs/01. ACM Lab/Pasted image 20240914180934.png",
     "assets/07. labs/01. ACM Lab/1728216683467.png",
     "assets/07. labs/01. ACM Lab/1728216675113.png",

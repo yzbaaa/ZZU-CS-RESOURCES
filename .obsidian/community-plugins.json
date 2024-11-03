@@ -1,5 +1,4 @@
 [
-  "obsidian-quiet-outline",
   "calendar",
   "periodic-notes",
   "obsidian-scroll-to-top-plugin",
@@ -19,5 +18,6 @@
   "better-export-pdf",
   "auto-displaystyle-inline-math",
   "obsidian-linter",
-  "cm-chs-patch"
+  "cm-chs-patch",
+  "obsidian-quiet-outline"
 ]
