@@ -4,8 +4,10 @@
 
 ## 跳转
 
-- [ZZU计智学习指南](https://yzbaaa.github.io/ZZU-CS-RESOURCES)
-- [ZZU-CS-Courses-Resources](https://github.com/yzbaaa/ZZU-CS-Courses-Resources)
+- [ZZU计智学习指南](https://yzbaaa.github.io/ZZU-CS-RESOURCES/)
+- [ZZU-CS-RESOURCES](https://github.com/yzbaaa/ZZU-CS-RESOURCES)
+- [ZZU-CS-Courses-Resources(Gitee)](https://gitee.com/clare371/zzu-cs-courses-resources)
+- [ZZU-CS-Courses-Resources(Github，已停用)](https://github.com/yzbaaa/ZZU-CS-Courses-Resources)
 
 ## 联系作者
 
