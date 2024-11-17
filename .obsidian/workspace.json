@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/01. course_resources/00. introduction.md",
+                "file": "docs/03. contest/02. popular_contests.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00. introduction"
+              "title": "02. popular_contests"
             }
           }
         ]
@@ -169,7 +169,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 282.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -188,20 +189,6 @@
   },
   "active": "a6da213ed5466090",
   "lastOpenFiles": [
-    "docs/00. home_page/04. update_log.md",
-    "docs/01. course_resources/00. introduction.md",
-    "docs/00. home_page/02. contribution_guidelines/00. basic.md",
-    "docs/00. home_page/02. contribution_guidelines/01. advanced.md",
-    "README.md",
-    "docs/01. course_resources/08. professional_practice.md",
-    "docs/01. course_resources/03. general_education_courses.md",
-    "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
-    "docs/01. course_resources/05. professional_basic_courses.md",
-    "docs/01. course_resources/06. professional_core.md",
-    "docs/01. course_resources/07. professional_development.md",
-    "docs/01. course_resources/09. F&Q.md",
-    "docs/01. course_resources/02. academic_plan.md",
-    "docs/01. course_resources/01. experience_sharing.md",
     "site/search/search_index.json",
     "site/search",
     "site/assets/javascripts/glightbox.min.js",
@@ -212,10 +199,28 @@
     "site/07. labs/05. Bipedal lab",
     "site/07. labs/04. AR&VR lab/index.html",
     "site/07. labs/04. AR&VR lab",
+    "site/07. labs/03. RoboMaster lab/index.html",
     "site/images/favicon.png",
     "site/assets/images/favicon.png",
     "site/assets/Pasted image 20240914180934.png",
     "site/assets/logo.png",
+    "docs/03. contest/02. popular_contests.md",
+    "docs/03. contest/01. F&Q.md",
+    "docs/03. contest/00. introduction.md",
+    "docs/01. course_resources/02. academic_plan.md",
+    "docs/01. course_resources/05. professional_basic_courses.md",
+    "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
+    "docs/01. course_resources/03. general_education_courses.md",
+    "docs/01. course_resources/06. professional_core.md",
+    "docs/01. course_resources/07. professional_development.md",
+    "docs/01. course_resources/08. professional_practice.md",
+    "docs/01. course_resources/01. experience_sharing.md",
+    "docs/01. course_resources/00. introduction.md",
+    "docs/00. home_page/04. update_log.md",
+    "docs/00. home_page/02. contribution_guidelines/00. basic.md",
+    "docs/00. home_page/02. contribution_guidelines/01. advanced.md",
+    "README.md",
+    "docs/01. course_resources/09. F&Q.md",
     "docs/07. labs/05. Bipedal lab.md",
     "docs/07. labs/06. SR lab.md",
     "docs/07. labs/04. AR&VR lab.md",
@@ -224,10 +229,6 @@
     "docs/07. labs/01. ACM lab.md",
     "docs/07. labs/00. introduction.md",
     "docs/07. labs/06. SR ab.md",
-    "docs/07. labs/05.Bipedal Lab.md",
-    "docs/07. labs/04.AR&VR Lab.md",
-    "docs/07. labs/03.RoboMaster Lab.md",
-    "docs/07. labs/06.SR Lab.md",
     "Pasted image 20241009233514.png",
     "assets/07. labs/01. ACM Lab/Pasted image 20240914180934.png",
     "assets/07. labs/01. ACM Lab/1728216683467.png",

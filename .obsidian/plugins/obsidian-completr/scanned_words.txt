@@ -167254,6 +167254,7 @@ RoboCupAsia
 Robot
 RboCup
 ROS
+RAICO
 Error
 Edge
 Extended
@@ -191089,6 +191090,7 @@ ACMer
 Atcoder
 Altium
 AutoCAD
+AIIA
 LCS
 LL
 LIS
@@ -232824,6 +232826,8 @@ CAD
 CIMC
 CCTV
 Challenges
+CULSC
+CPC
 First
 Firth
 Floyd
@@ -252295,6 +252299,7 @@ MISC
 Maximilian
 Multisim
 Matlab
+MathorCup
 Kruskal
 Koch
 KGgoAAAANSUhEUgAABwkAAAPoCAYAAAAlWsEpAAAgAElEQVR
@@ -264626,6 +264631,7 @@ IEND
 International
 Invitational
 IJCAI
+ICT
 Out
 Orthogonal
 Orthonormal
