@@ -204061,6 +204061,7 @@ Git
 Grandmaster
 Github
 GPSR
+Gitee
 Node
 Note
 Nullspace
