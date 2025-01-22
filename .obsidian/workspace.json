@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "17731f6eadcb35cb",
+            "id": "8d2f779b3d068340",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,20 +19,6 @@
               },
               "icon": "lucide-file",
               "title": "04. update_log"
-            }
-          },
-          {
-            "id": "8d2f779b3d068340",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/01. course_resources/00. introduction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00. introduction"
             }
           }
         ]
@@ -201,11 +187,12 @@
       "periodic-notes:Open this week": false
     }
   },
-  "active": "17731f6eadcb35cb",
+  "active": "8d2f779b3d068340",
   "lastOpenFiles": [
-    "site/assets/javascripts/workers/search.07f07601.min.js.map",
-    "site/assets/javascripts/workers/search.07f07601.min.js",
-    "site/assets/javascripts/workers",
+    "README.md",
+    "docs/07. labs/00. introduction.md",
+    "docs/07. labs/01. ACM lab.md",
+    "docs/01. course_resources/00. introduction.md",
     "site/search/search_index.json",
     "site/search",
     "site/assets/javascripts/glightbox.min.js",
@@ -214,13 +201,14 @@
     "site/07. labs/06. SR lab",
     "site/07. labs/05. Bipedal lab/index.html",
     "site/07. labs/05. Bipedal lab",
+    "site/07. labs/04. AR&VR lab/index.html",
+    "site/07. labs/04. AR&VR lab",
     "site/images/favicon.png",
     "site/assets/images/favicon.png",
     "site/assets/Pasted image 20240914180934.png",
     "site/assets/logo.png",
-    "docs/01. course_resources/00. introduction.md",
-    "docs/01. course_resources/01. experience_sharing.md",
     "docs/00. home_page/04. update_log.md",
+    "docs/01. course_resources/01. experience_sharing.md",
     "().md",
     "docs/01. course_resources/05. professional_basic_courses.md",
     "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
@@ -235,14 +223,12 @@
     "docs/01. course_resources/08. professional_practice.md",
     "docs/00. home_page/02. contribution_guidelines/00. basic.md",
     "docs/00. home_page/02. contribution_guidelines/01. advanced.md",
-    "README.md",
     "docs/01. course_resources/09. F&Q.md",
     "docs/07. labs/05. Bipedal lab.md",
     "docs/07. labs/06. SR lab.md",
     "docs/07. labs/04. AR&VR lab.md",
     "docs/07. labs/03. RoboMaster lab.md",
     "docs/07. labs/02. cybersecurity lab.md",
-    "docs/07. labs/01. ACM lab.md",
     "Pasted image 20241009233514.png",
     "assets/07. labs/01. ACM Lab/Pasted image 20240914180934.png",
     "assets/07. labs/01. ACM Lab/1728216683467.png",
