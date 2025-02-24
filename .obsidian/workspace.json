@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/00. home_page/04. update_log.md",
+                "file": "docs/01. course_resources/00. introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04. update_log"
+              "title": "00. introduction"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -189,6 +190,8 @@
   },
   "active": "8d2f779b3d068340",
   "lastOpenFiles": [
+    "docs/01. course_resources/01. experience_sharing.md",
+    "docs/00. home_page/04. update_log.md",
     "README.md",
     "docs/07. labs/00. introduction.md",
     "docs/07. labs/01. ACM lab.md",
@@ -207,8 +210,6 @@
     "site/assets/images/favicon.png",
     "site/assets/Pasted image 20240914180934.png",
     "site/assets/logo.png",
-    "docs/00. home_page/04. update_log.md",
-    "docs/01. course_resources/01. experience_sharing.md",
     "().md",
     "docs/01. course_resources/05. professional_basic_courses.md",
     "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
