@@ -40536,6 +40536,7 @@ courses
 clip
 codeforces
 contest
+core
 vector
 value
 void
@@ -109750,6 +109751,7 @@ iOD
 iMFa
 item
 iCAN
+ignore
 unsigned
 unordered
 upper
