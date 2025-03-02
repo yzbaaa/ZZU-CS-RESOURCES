@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "61495ac79e22101d",
+        "id": "fa1b785ece83a565",
         "type": "tabs",
         "children": [
           {
-            "id": "8d2f779b3d068340",
+            "id": "036ec631a5ebf1d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/00. home_page/04. update_log.md",
+                "file": "docs/07. labs/01. ACM Lab.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04. update_log"
+              "title": "01. ACM Lab"
             }
           }
         ]
@@ -40,10 +40,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "文件列表"
+              "title": "Files"
             }
           },
           {
@@ -103,8 +104,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -164,33 +165,43 @@
               "icon": "lucide-list",
               "title": "05. professional_basic_courses 的大纲"
             }
+          },
+          {
+            "id": "eb82d0925de63681",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Quiet Outline"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "workspaces:管理工作区布局": false,
-      "audio-recorder:开始/结束录音": false,
-      "obsidian42-brat:BRAT": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
+      "periodic-notes:Open this week": false,
       "obsidian-importer:Open Importer": false,
-      "periodic-notes:Open this week": false
+      "obsidian42-brat:BRAT": false
     }
   },
-  "active": "8d2f779b3d068340",
+  "active": "036ec631a5ebf1d0",
   "lastOpenFiles": [
-    "README.md",
     "docs/07. labs/00. introduction.md",
+    "docs/00. home_page/04. update_log.md",
+    "README.md",
     "docs/07. labs/01. ACM lab.md",
     "docs/01. course_resources/00. introduction.md",
     "site/search/search_index.json",
@@ -207,7 +218,6 @@
     "site/assets/images/favicon.png",
     "site/assets/Pasted image 20240914180934.png",
     "site/assets/logo.png",
-    "docs/00. home_page/04. update_log.md",
     "docs/01. course_resources/01. experience_sharing.md",
     "().md",
     "docs/01. course_resources/05. professional_basic_courses.md",
