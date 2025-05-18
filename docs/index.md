@@ -26,7 +26,6 @@ title: ZZU计智学习指南
 ## 联系作者
 
 - 邮箱：aiyaozb@stu.zzu.edu.cn
-- 微信：a59fe5（记得说明来由）
 
 
 ## 加入我们

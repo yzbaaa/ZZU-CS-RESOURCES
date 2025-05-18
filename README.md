@@ -12,6 +12,5 @@
 ## 联系作者
 
 - 邮箱：aiyaozb@stu.zzu.edu.cn
-- 微信：a59fe5（记得说明来由）
 
 
