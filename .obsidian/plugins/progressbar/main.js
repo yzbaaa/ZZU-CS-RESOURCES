@@ -28,11 +28,18 @@ __export(main_exports, {
 });
 module.exports = __toCommonJS(main_exports);
 var import_obsidian = require("obsidian");
+var import_obsidian2 = require("obsidian");
 var ProgressBar = class extends import_obsidian.Plugin {
   // settings: ProgressBarSettings;
   async onload() {
     this.registerMarkdownCodeBlockProcessor("progressbar", (source, el, ctx) => {
-      const cfg = (0, import_obsidian.parseYaml)(source);
+      let cfg;
+      try {
+        cfg = (0, import_obsidian.parseYaml)(source);
+      } catch (e) {
+        newError(el, "Cannot parse the YAML Format");
+        return;
+      }
       if (!cfg.kind && !cfg.value) {
         newError(el, "No kind specified");
         return;
@@ -41,7 +48,15 @@ var ProgressBar = class extends import_obsidian.Plugin {
         newError(el, "Must specify min and max for day-custom");
         return;
       }
-      createProgressBar(el, cfg);
+      if (cfg.kind && !(cfg.kind === "manual" || cfg.kind === "other") && cfg.button) {
+        newError(el, "Can only use button with kind: manual/other");
+        return;
+      }
+      if (cfg.button && !cfg.id) {
+        newError(el, "Can not use button without id");
+        return;
+      }
+      createProgressBar(el, cfg, source);
     });
   }
   onunload() {
@@ -57,7 +72,7 @@ var ProgressBar = class extends import_obsidian.Plugin {
 function newError(el, msg) {
   el.createEl("div", { text: "ProgressBarError: " + msg });
 }
-function createProgressBar(el, bar) {
+function createProgressBar(el, bar, source) {
   switch (bar.kind) {
     case "day-year":
       return newDayYearProgressBar(el, bar);
@@ -121,10 +136,68 @@ function newProgressBar(el, bar, val) {
     percentage: Math.round(val.value / val.max * 100) + "%"
   });
   const label = el.createEl("label", { text: message + ": " });
-  const progressbar = label.createEl("progress");
+  if (bar.button) {
+    const minus = el.createEl("button", { text: "-" });
+    minus.style.fontSize = "larger";
+    minus.addEventListener("click", () => {
+      decrement(bar);
+    });
+  }
+  const progressbar = el.createEl("progress");
   progressbar.value = val.value;
   progressbar.max = val.max;
   if (bar.width) {
     progressbar.style.width = bar.width;
   }
+  if (bar.button) {
+    const plus = el.createEl("button", { text: "+" });
+    plus.style.fontSize = "larger";
+    plus.addEventListener("click", () => {
+      increment(bar);
+    });
+  }
+  el.style.padding = "1px";
+  el.style.display = "flex";
+  el.style.alignItems = "center";
+  el.style.gap = "10px";
 }
+function increment(blockTextYAML) {
+  if (blockTextYAML.value >= blockTextYAML.max) {
+    return;
+  }
+  const file = this.app.workspace.getActiveFile();
+  if (file) {
+    let doneOnce = false;
+    this.app.vault.process(file, (data) => {
+      const pattern = new RegExp(`\`{3}progressbar[a-zA-Z0-9\\s:{}#\\-"]*id:[\\s]${blockTextYAML.id}[a-zA-Z0-9\\s:{}#\\-"]*\`{3}`, "g");
+      return data.replace(pattern, (source) => {
+        if (!doneOnce) {
+          blockTextYAML.value = blockTextYAML.value + 1;
+          doneOnce = true;
+        }
+        return source.replace(/value: [0-9\-]*/g, `value: ${blockTextYAML.value}`);
+      });
+    });
+  }
+}
+function decrement(blockTextYAML) {
+  if (blockTextYAML.value <= (blockTextYAML.min ? blockTextYAML.min : 0)) {
+    return;
+  }
+  const file = this.app.workspace.getActiveFile();
+  if (file) {
+    let doneOnce = false;
+    this.app.vault.process(file, (data) => {
+      const pattern = new RegExp(`\`{3}progressbar[a-zA-Z0-9\\s:{}#\\-"]*id:[\\s]${blockTextYAML.id}[a-zA-Z0-9\\s:{}#\\-"]*\`{3}`, "g");
+      return data.replace(pattern, (source) => {
+        if (!doneOnce) {
+          blockTextYAML.value = blockTextYAML.value - 1;
+          doneOnce = true;
+        }
+        return source.replace(/value: [0-9\-]*/g, `value: ${blockTextYAML.value}`);
+      });
+    });
+  }
+}
+
+/* nosourcemap */

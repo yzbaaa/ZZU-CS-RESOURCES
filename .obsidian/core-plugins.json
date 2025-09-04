@@ -5,7 +5,7 @@
   "graph": true,
   "backlink": true,
   "canvas": true,
-  "outgoing-link": true,
+  "outgoing-link": false,
   "tag-pane": true,
   "properties": false,
   "page-preview": true,
@@ -27,5 +27,7 @@
   "file-recovery": true,
   "publish": false,
   "sync": false,
-  "webviewer": false
+  "webviewer": false,
+  "footnotes": false,
+  "bases": true
 }

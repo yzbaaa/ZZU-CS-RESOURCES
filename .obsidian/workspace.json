@@ -1,70 +1,41 @@
 {
   "main": {
-    "id": "5969f5b7dddcf57f",
+    "id": "19d610cbd32d804e",
     "type": "split",
     "children": [
       {
-        "id": "61495ac79e22101d",
+        "id": "ad3877b4d86a2ac2",
         "type": "tabs",
         "children": [
           {
-            "id": "8d2f779b3d068340",
+            "id": "db6739bd10f7e555",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/01. course_resources/00. introduction.md",
+                "file": "docs/01. course_resources/01. experience_sharing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00. introduction"
-            }
-          },
-          {
-            "id": "319b97e67f296f87",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/01. course_resources/00. introduction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00. introduction"
-            }
-          },
-          {
-            "id": "9b389e6d23bc4808",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "04. fundamentals_of_mathematics_and_physics_&_English"
+              "title": "01. experience_sharing"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "b56b6150124d6ba1",
+    "id": "6904d34c237bf3f0",
     "type": "split",
     "children": [
       {
-        "id": "811f8194dcbe607e",
+        "id": "60a95862e1b2b6ca",
         "type": "tabs",
         "children": [
           {
-            "id": "60fe70b3b4e82a29",
+            "id": "531b832996577858",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -77,12 +48,12 @@
             }
           },
           {
-            "id": "a13e18ed88d139d7",
+            "id": "7adb598c62bc3158",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "a59",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +65,7 @@
             }
           },
           {
-            "id": "656c70ccdac0ac60",
+            "id": "306ee7c74074ee25",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -102,24 +73,34 @@
               "icon": "lucide-bookmark",
               "title": "书签"
             }
+          },
+          {
+            "id": "c2f280d035f991f0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 273.5
+    "width": 271.5
   },
   "right": {
-    "id": "bb5b10eba3a43a11",
+    "id": "5831550c5cd50015",
     "type": "split",
     "children": [
       {
-        "id": "c1bc774525dae7fd",
+        "id": "b02d3f3170e44c93",
         "type": "tabs",
+        "dimension": 77.51937984496125,
         "children": [
           {
-            "id": "cb11f8e6f6786f9d",
+            "id": "1d558ff66a8a7ed7",
             "type": "leaf",
             "state": {
               "type": "quiet-outline",
@@ -129,7 +110,7 @@
             }
           },
           {
-            "id": "4ccce2d9bad30927",
+            "id": "8e07c2d318ab4322",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -139,12 +120,12 @@
             }
           },
           {
-            "id": "5164d42741fbd74d",
+            "id": "ab7bf6aaa31da5db",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/01. course_resources/05. professional_basic_courses.md",
+                "file": "05 课程笔记/07 ML_LHY22sp/08 生成模型.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,119 +135,119 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "05. professional_basic_courses 的反向链接列表"
+              "title": "08 生成模型 的反向链接列表"
             }
           },
           {
-            "id": "94ac455beffab921",
+            "id": "cd400c44b68ae074",
             "type": "leaf",
             "state": {
-              "type": "outgoing-link",
+              "type": "outline",
               "state": {
-                "file": "docs/01. course_resources/05. professional_basic_courses.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "file": "05 课程笔记/07 ML_LHY22sp/08 生成模型.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
-              "icon": "links-going-out",
-              "title": "05. professional_basic_courses 的出链列表"
+              "icon": "lucide-list",
+              "title": "08 生成模型 的大纲"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "5986e400a2218f50",
+        "type": "tabs",
+        "dimension": 22.480620155038753,
+        "children": [
           {
-            "id": "aa5b30d173d88735",
+            "id": "1e7bc94dd715c83b",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "标签"
-            }
-          },
-          {
-            "id": "559a24ca7efcd6a1",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "docs/01. course_resources/05. professional_basic_courses.md"
-              },
-              "icon": "lucide-list",
-              "title": "05. professional_basic_courses 的大纲"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 288.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "workspaces:管理工作区布局": false,
       "audio-recorder:开始/结束录音": false,
-      "obsidian42-brat:BRAT": false,
+      "workspaces:管理工作区布局": false,
       "obsidian-importer:Open Importer": false,
+      "obsidian42-brat:BRAT": false,
+      "remotely-save:Remotely Save": false,
       "periodic-notes:Open this week": false
     }
   },
-  "active": "319b97e67f296f87",
+  "active": "db6739bd10f7e555",
   "lastOpenFiles": [
-    "site/search/search_index.json",
-    "site/search",
-    "site/assets/javascripts/glightbox.min.js",
-    "site/assets/stylesheets/glightbox.min.css",
-    "site/07. labs/06. SR lab/index.html",
-    "site/07. labs/06. SR lab",
-    "site/07. labs/05. Bipedal lab/index.html",
-    "site/07. labs/05. Bipedal lab",
-    "site/07. labs/03. RoboMaster lab/index.html",
-    "site/07. labs/04. AR&VR lab/index.html",
-    "site/07. labs/02. cybersecurity lab/index.html",
-    "site/images/favicon.png",
-    "site/assets/images/favicon.png",
-    "site/assets/Pasted image 20240914180934.png",
-    "site/assets/logo.png",
-    "docs/00. home_page/04. update_log.md",
-    "README.md",
-    "docs/index.md",
+    "docs/01. course_resources/00. introduction.md",
+    "docs/01. course_resources/01. experience_sharing.md",
     "docs/01. course_resources/02. academic_plan.md",
     "docs/01. course_resources/06. professional_core.md",
     "docs/01. course_resources/04. fundamentals_of_mathematics_and_physics_&_English.md",
-    "docs/01. course_resources/00. introduction.md",
-    "docs/01. course_resources/01. experience_sharing.md",
-    "docs/07. labs/00. introduction.md",
-    "docs/07. labs/01. ACM lab.md",
-    "().md",
     "docs/01. course_resources/05. professional_basic_courses.md",
     "docs/01. course_resources/03. general_education_courses.md",
-    "docs/03. contest/02. popular_contests.md",
-    "docs/03. contest/01. F&Q.md",
-    "docs/03. contest/00. introduction.md",
-    "docs/01. course_resources/07. professional_development.md",
+    "docs/00. home_page/04. update_log.md",
+    "docs/00. home_page/01. usage_guidelines.md",
+    "docs/00. home_page/03. submission-template/00. course_submission_template.md",
     "docs/01. course_resources/08. professional_practice.md",
-    "docs/00. home_page/02. contribution_guidelines/00. basic.md",
-    "docs/00. home_page/02. contribution_guidelines/01. advanced.md",
+    "docs/01. course_resources/07. professional_development.md",
     "docs/01. course_resources/09. F&Q.md",
-    "docs/07. labs/05. Bipedal lab.md",
-    "docs/07. labs/06. SR lab.md",
-    "docs/07. labs/04. AR&VR lab.md",
-    "docs/07. labs/03. RoboMaster lab.md",
-    "Pasted image 20241009233514.png",
-    "assets/07. labs/01. ACM Lab/Pasted image 20240914180934.png",
-    "assets/07. labs/01. ACM Lab/1728216683467.png",
-    "assets/07. labs/01. ACM Lab/1728216675113.png",
-    "assets/07. labs/01. ACM Lab/1728216662102.png",
-    "assets/07. labs/01. ACM Lab/1728216647435.png",
-    "未命名.canvas",
-    "02 算法整理/00 算法导图.canvas",
-    "02 算法整理/未命名.canvas"
+    "docs/01. course_resources/08. F&Q.md",
+    "ZZU-CS-RESOURCES/mkdocs.yml",
+    "ZZU-CS-RESOURCES/site/404.html",
+    "ZZU-CS-RESOURCES/docs/index.md",
+    "ZZU-CS-RESOURCES/site/index.html",
+    "ZZU-CS-RESOURCES/site/sitemap.xml",
+    "site/03. contest/02. F&Q/index.html",
+    "site/overrides/partials/footer.html",
+    "docs/overrides/partials/footer.html",
+    "ZZU-CS-RESOURCES/site/sitemap.xml.gz",
+    "ZZU-CS-RESOURCES/docs/assets/logo.png",
+    "ZZU-CS-RESOURCES/site/assets/logo.png",
+    "ZZU-CS-RESOURCES/site/images/favicon.png",
+    "ZZU-CS-RESOURCES/docs/images/favicon.png",
+    "ZZU-CS-RESOURCES/site/stylesheets/extra.css",
+    "ZZU-CS-RESOURCES/docs/stylesheets/extra.css",
+    "ZZU-CS-RESOURCES/site/assets/images/favicon.png",
+    "ZZU-CS-RESOURCES/docs/01. course_resources/08. F&Q.md",
+    "ZZU-CS-RESOURCES/site/assets/Pasted image 20240914180934.png",
+    "ZZU-CS-RESOURCES/docs/assets/Pasted image 20240914180934.png",
+    "05 课程笔记/07 ML_Lhy 22/06 自注意力机制.md",
+    "05 课程笔记/07 ML_Lhy 22/09 自监督学习.md",
+    "05 课程笔记/07 ML_Lhy 22/15 HW.md",
+    "00 attachment/Pasted image 20250829091523.png",
+    "05 课程笔记/07 ML_Lhy 22/08 生成模型.md",
+    "00 attachment/Pasted image 20250828175306.png",
+    "00 attachment/Pasted image 20250828174245.png",
+    "05 课程笔记/02 微积分/00 精简资料.md",
+    "05 课程笔记/00 库/一篇文章带你彻底搞懂Unicode、UTF-8、GB2312、GBK之间的关系.md",
+    "05 课程笔记/03 概率论与数理统计/00 精简资料.md",
+    "05 课程笔记/01 MIT 18.06 线性代数/04 （待学习）傅里叶级数与傅里叶变换.md",
+    "05 课程笔记/02 微积分下/00 精简资料.md",
+    "05 课程笔记/01 MIT 18.06 线性代数/02 术语翻译.md",
+    "05 课程笔记/07 ML_Lhy 22/mindmap.canvas",
+    "05 课程笔记/07 ML_LHY22sp/未命名.canvas",
+    "06 科研/backup/01 HPE 论文整理/导图.canvas"
   ]
 }

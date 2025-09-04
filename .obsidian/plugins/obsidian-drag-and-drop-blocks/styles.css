@@ -1,0 +1,63 @@
+/* Search results drag handler */
+
+#search-res-hover {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-accent-hover);
+    cursor: grab;
+    position: absolute;
+}
+
+#search-res-hover.show {
+    color: var(--text-accent-hover);
+}
+
+#search-res-hover.hide {
+    left: -100px !important;
+    top: -100px !important;
+}
+
+#search-res-hover.dragging {
+    color: transparent;
+}
+
+#search-res-ghost.drag-ghost {
+    max-width: 500px;
+}
+
+#block-ref-hover {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-accent-hover);
+    cursor: grab;
+    position: absolute;
+}
+
+#block-ref-hover.show {
+    color: var(--text-accent-hover);
+}
+
+#block-ref-hover.hide {
+    left: -100px !important;
+    top: -100px !important;
+}
+
+#block-ref-hover.dragging {
+    color: transparent;
+}
+
+#drag-drop-line {
+    top: -10px;
+    left: -10px;
+    position: absolute;
+    width: 400px;
+    border-color: var(--text-accent-hover);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+pre#source-cm-line {
+    border: 1px var(--text-accent-hover) solid;
+}

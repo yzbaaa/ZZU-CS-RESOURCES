@@ -5,7 +5,6 @@
   "obsidian-importer",
   "markdown-prettifier",
   "mousewheel-image-zoom",
-  "codeblock-customizer",
   "obsidian42-brat",
   "mindmap",
   "obsidian-local-rest-api",
@@ -17,7 +16,17 @@
   "progressbar",
   "better-export-pdf",
   "auto-displaystyle-inline-math",
-  "obsidian-linter",
   "cm-chs-patch",
-  "obsidian-quiet-outline"
+  "obsidian-export-image",
+  "obsidian-zoom",
+  "advanced-canvas",
+  "obsidian-prominent-starred-files",
+  "obsidian-pandoc",
+  "remotely-save",
+  "obsidian-jira-issue",
+  "obsidian-linter",
+  "obsidian-drag-and-drop-blocks",
+  "codeblock-customizer",
+  "obsidian-quiet-outline",
+  "obsidian-style-settings"
 ]

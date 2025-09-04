@@ -57,7 +57,7 @@ class Util {
          * @private
          */
     static isInTable(searchString, fileValue) {
-        return fileValue.search(new RegExp(`^\\|.+${searchString}.+\\|$`, "m")) !== -1;
+        return fileValue.search(new RegExp(`^\\|.+${escapeRegex(searchString)}.+\\|$`, "m")) !== -1;
     }
     /**
      * Get the image name from a given src uri of a local image
@@ -90,12 +90,12 @@ class Util {
         const sizeSeparator = isInTable ? "\\|" : "|";
         // Separator to use for the regex: isInTable ? \\\| : \|
         const regexSeparator = isInTable ? "\\\\\\|" : "\\|";
-        const imageAttributes = this.getImageAttributes(imageName, fileText);
-        imageName = `${imageName}${imageAttributes}`;
         // check character before the imageName to check if markdown link or obsidian link
         const imageNamePosition = fileText.indexOf(imageName);
         const isObsidianLink = fileText.charAt(imageNamePosition - 1) === "[";
         if (isObsidianLink) {
+            const imageAttributes = this.getImageAttributes(imageName, fileText);
+            imageName = `${imageName}${imageAttributes}`;
             return Util.generateReplaceTermForObsidianSyntax(imageName, regexSeparator, sizeSeparator);
         }
         else {
@@ -243,13 +243,15 @@ var ModifierKey;
 const DEFAULT_SETTINGS = {
     modifierKey: ModifierKey.ALT,
     stepSize: 25,
-    initialSize: 500
+    initialSize: 500,
+    resizeInCanvas: true,
 };
+const CtrlCanvasConflictWarning = "Warning: Using Ctrl as the modifier key conflicts with default canvas zooming behavior when 'Resize in canvas' is enabled. Consider using another modifier key or disabling 'Resize in canvas'.";
 class MouseWheelZoomPlugin extends obsidian.Plugin {
     constructor() {
         super(...arguments);
         this.isKeyHeldDown = false;
-        this.wheelOpt = { passive: false };
+        this.wheelOpt = { passive: false, capture: true };
         this.wheelEvent = 'wheel';
     }
     onload() {
@@ -259,7 +261,39 @@ class MouseWheelZoomPlugin extends obsidian.Plugin {
             this.registerEvents(window);
             this.addSettingTab(new MouseWheelZoomSettingsTab(this.app, this));
             console.log("Loaded: Mousewheel image zoom");
+            this.checkExistingUserConflict();
         });
+    }
+    checkExistingUserConflict() {
+        const noticeShownKey = 'mousewheel-zoom-ctrl-warning-shown'; // Key for localStorage flag
+        const isCtrl = this.settings.modifierKey === ModifierKey.CTRL || this.settings.modifierKey === ModifierKey.CTRL_RIGHT;
+        // Only show the notice if the conflict exists AND the user hasn't dismissed it before (using localStorage flag)
+        if (isCtrl && this.settings.resizeInCanvas && !localStorage.getItem(noticeShownKey)) {
+            const fragment = document.createDocumentFragment();
+            const titleEl = document.createElement('strong');
+            titleEl.textContent = "Mousewheel Image Zoom";
+            fragment.appendChild(titleEl);
+            fragment.appendChild(document.createElement('br'));
+            const messageEl = document.createElement('span');
+            messageEl.textContent = CtrlCanvasConflictWarning;
+            fragment.appendChild(messageEl);
+            fragment.appendChild(document.createElement('br'));
+            const settingsButton = document.createElement('button');
+            settingsButton.textContent = "Open Settings";
+            settingsButton.style.marginTop = "5px";
+            settingsButton.onclick = () => {
+                // settings is a private property of the app object, so we need to cast it to any to access it
+                // See https://forum.obsidian.md/t/open-settings-for-my-plugin-community-plugin-settings-deeplink/61563/4
+                const setting = this.app.setting;
+                setting.open();
+                setting.openTabById(this.manifest.id);
+            };
+            fragment.appendChild(settingsButton);
+            new obsidian.Notice(fragment, 0);
+            // Set the flag in localStorage so the notice doesn't appear again
+            // unless the user clears their localStorage or the key changes.
+            localStorage.setItem(noticeShownKey, 'true');
+        }
     }
     /**
      * When the config key is released, we enable the scroll again and reset the key held down flag.
@@ -280,7 +314,13 @@ class MouseWheelZoomPlugin extends obsidian.Plugin {
     registerEvents(currentWindow) {
         const doc = currentWindow.document;
         this.registerDomEvent(doc, "keydown", (evt) => {
+            var _a;
             if (evt.code === this.settings.modifierKey.toString()) {
+                // When canvas mode is enabled we just ignore the keydown event if the canvas is active
+                const isActiveViewCanvas = ((_a = this.app.workspace.getActiveViewOfType(obsidian.View)) === null || _a === void 0 ? void 0 : _a.getViewType()) === "canvas";
+                if (isActiveViewCanvas && !this.settings.resizeInCanvas) {
+                    return;
+                }
                 this.isKeyHeldDown = true;
                 if (this.settings.modifierKey !== ModifierKey.SHIFT && this.settings.modifierKey !== ModifierKey.SHIFT_RIGHT) { // Ignore shift to allow horizontal scrolling
                     // Disable the normal scrolling behavior when the key is held down
@@ -303,12 +343,55 @@ class MouseWheelZoomPlugin extends obsidian.Plugin {
                     return;
                 }
                 const eventTarget = evt.target;
-                if (eventTarget.nodeName === "IMG") {
+                const targetIsCanvas = eventTarget.hasClass("canvas-node-content-blocker");
+                const targetIsCanvasNode = eventTarget.closest(".canvas-node-content") !== null;
+                const targetIsImage = eventTarget.nodeName === "IMG";
+                if (targetIsCanvas || targetIsCanvasNode || targetIsImage) {
+                    this.disableScroll(currentWindow);
+                }
+                if (targetIsCanvas && this.settings.resizeInCanvas) {
+                    // seems we're trying to zoom on some canvas node.                    
+                    this.handleZoomForCanvas(evt, eventTarget);
+                }
+                else if (targetIsCanvasNode) ;
+                else if (targetIsImage) {
                     // Handle the zooming of the image
                     this.handleZoom(evt, eventTarget);
                 }
             }
         });
+        this.registerDomEvent(currentWindow, "blur", () => {
+            // When the window loses focus, ensure scrolling is re-enabled for this window
+            // and reset the key held state defensively, although the keyup should ideally handle it.
+            this.isKeyHeldDown = false;
+            this.enableScroll(currentWindow);
+        });
+    }
+    /**
+    * Handles zooming with the mousewheel on canvas node
+    * @param evt wheel event
+    * @param eventTarget targeted canvas node element
+    * @private
+    */
+    handleZoomForCanvas(evt, eventTarget) {
+        // get active canvas
+        const isCanvas = this.app.workspace.getActiveViewOfType(obsidian.View).getViewType() === "canvas";
+        if (!isCanvas) {
+            throw new Error("Can't find canvas");
+        }
+        // Unfortunately the current type definitions don't include any canvas functionality...
+        const canvas = this.app.workspace.getActiveViewOfType(obsidian.View).canvas;
+        // get triggered canvasNode
+        const canvasNode = Array.from(canvas.nodes.values())
+            .find(node => node.contentBlockerEl == eventTarget);
+        // Adjust delta based on the direction of the resize
+        let delta = evt.deltaY > 0 ? this.settings.stepSize : this.settings.stepSize * -1;
+        // Calculate new dimensions directly using the delta and aspectRatio
+        const aspectRatio = canvasNode.width / canvasNode.height;
+        const newWidth = canvasNode.width + delta;
+        const newHeight = newWidth / aspectRatio;
+        // Resize the canvas node using the new dimensions
+        canvasNode.resize({ width: newWidth, height: newHeight });
     }
     /**
      * Handles zooming with the mousewheel on an image
@@ -320,36 +403,44 @@ class MouseWheelZoomPlugin extends obsidian.Plugin {
         return __awaiter(this, void 0, void 0, function* () {
             const imageUri = eventTarget.attributes.getNamedItem("src").textContent;
             const activeFile = yield this.getActivePaneWithImage(eventTarget);
-            let fileText = yield this.app.vault.read(activeFile);
-            const originalFileText = fileText;
-            // Get parameters like the regex or the replacement terms based on the fact if the image is locally stored or not.
-            const zoomParams = this.getZoomParams(imageUri, fileText, eventTarget);
-            // Check if there is already a size parameter for this image.
-            const sizeMatches = fileText.match(zoomParams.sizeMatchRegExp);
-            // Element already has a size entry
-            if (sizeMatches !== null) {
-                const oldSize = parseInt(sizeMatches[1]);
-                let newSize = oldSize;
-                if (evt.deltaY < 0) {
-                    newSize += this.settings.stepSize;
+            yield this.app.vault.process(activeFile, (fileText) => {
+                let frontmatter = "";
+                let body = fileText;
+                const frontmatterRegex = /^---\s*([\s\S]*?)\s*---\n*/;
+                const match = fileText.match(frontmatterRegex);
+                if (match) {
+                    frontmatter = match[0]; // Keep the full matched frontmatter block including delimiters and trailing newline
+                    body = fileText.slice(frontmatter.length); // The rest is the body
                 }
-                else if (evt.deltaY > 0 && newSize > this.settings.stepSize) {
-                    newSize -= this.settings.stepSize;
+                const zoomParams = this.getZoomParams(imageUri, body, eventTarget);
+                // Perform replacements ONLY on the body
+                let modifiedBody = body;
+                const sizeMatches = body.match(zoomParams.sizeMatchRegExp);
+                // Element already has a size entry in the body
+                if (sizeMatches !== null) {
+                    const oldSize = parseInt(sizeMatches[1]);
+                    let newSize = oldSize;
+                    if (evt.deltaY < 0) {
+                        newSize += this.settings.stepSize;
+                    }
+                    else if (evt.deltaY > 0 && newSize > this.settings.stepSize) {
+                        newSize -= this.settings.stepSize;
+                    }
+                    // Replace within the body
+                    modifiedBody = body.replace(zoomParams.replaceSizeExist.getReplaceFromString(oldSize), zoomParams.replaceSizeExist.getReplaceWithString(newSize));
                 }
-                fileText = fileText.replace(zoomParams.replaceSizeExist.getReplaceFromString(oldSize), zoomParams.replaceSizeExist.getReplaceWithString(newSize));
-            }
-            else { // Element has no size entry -> give it an initial size
-                const initialSize = this.settings.initialSize;
-                var image = new Image();
-                image.src = imageUri;
-                var width = image.naturalWidth;
-                var minWidth = Math.min(width, initialSize);
-                fileText = fileText.replace(zoomParams.replaceSizeNotExist.getReplaceFromString(0), zoomParams.replaceSizeNotExist.getReplaceWithString(minWidth));
-            }
-            // Save changed size
-            if (fileText !== originalFileText) {
-                yield this.app.vault.modify(activeFile, fileText);
-            }
+                else { // Element has no size entry in the body -> give it an initial size
+                    const initialSize = this.settings.initialSize;
+                    const image = new Image();
+                    image.src = imageUri;
+                    const width = image.naturalWidth || initialSize;
+                    const minWidth = Math.min(width, initialSize);
+                    // Replace within the body
+                    modifiedBody = body.replace(zoomParams.replaceSizeNotExist.getReplaceFromString(0), zoomParams.replaceSizeNotExist.getReplaceWithString(minWidth));
+                }
+                // Combine original frontmatter with the modified body
+                return frontmatter + modifiedBody;
+            });
         });
     }
     /**
@@ -383,6 +474,11 @@ class MouseWheelZoomPlugin extends obsidian.Plugin {
         }
         else if (imageUri.contains("app://")) {
             const imageName = Util.getLocalImageNameFromUri(imageUri);
+            return Util.getLocalImageZoomParams(imageName, fileText);
+        }
+        else if (imageUri.contains("data:image/")) { // for image generated by PDF++ extension
+            // example: data:image/png;base64,iVB...
+            const imageName = Util.getLocalImageNameFromUri(target.parentElement.getAttribute("src"));
             return Util.getLocalImageZoomParams(imageName, fileText);
         }
         throw new Error("Image is not zoomable");
@@ -432,6 +528,23 @@ class MouseWheelZoomSettingsTab extends obsidian.PluginSettingTab {
         super(app, plugin);
         this.plugin = plugin;
     }
+    // Helper function to update the warning message
+    updateWarningMessage(modifierKey, resizeInCanvas) {
+        if (!this.warningEl)
+            return;
+        const isCtrl = modifierKey === ModifierKey.CTRL || modifierKey === ModifierKey.CTRL_RIGHT;
+        const conflict = isCtrl && resizeInCanvas;
+        if (conflict) {
+            this.warningEl.setText(CtrlCanvasConflictWarning);
+            this.warningEl.style.display = 'block';
+            this.warningEl.style.color = 'var(--text-warning)';
+            this.warningEl.style.marginTop = '10px';
+        }
+        else {
+            this.warningEl.setText("");
+            this.warningEl.style.display = 'none';
+        }
+    }
     display() {
         let { containerEl } = this;
         containerEl.empty();
@@ -449,6 +562,7 @@ class MouseWheelZoomSettingsTab extends obsidian.PluginSettingTab {
             .setValue(this.plugin.settings.modifierKey)
             .onChange((value) => __awaiter(this, void 0, void 0, function* () {
             this.plugin.settings.modifierKey = value;
+            this.updateWarningMessage(this.plugin.settings.modifierKey, this.plugin.settings.resizeInCanvas);
             yield this.plugin.saveSettings();
         })));
         new obsidian.Setting(containerEl)
@@ -479,8 +593,24 @@ class MouseWheelZoomSettingsTab extends obsidian.PluginSettingTab {
                 yield this.plugin.saveSettings();
             }));
         });
+        new obsidian.Setting(containerEl)
+            .setName('Resize in canvas')
+            .setDesc('When enabled, all nodes on the Obsidian canvas can also be resized using the Modifier key')
+            .addToggle((toggle) => {
+            toggle.setValue(this.plugin.settings.resizeInCanvas)
+                .onChange((value) => __awaiter(this, void 0, void 0, function* () {
+                this.plugin.settings.resizeInCanvas = value;
+                this.updateWarningMessage(this.plugin.settings.modifierKey, value);
+                yield this.plugin.saveSettings();
+            }));
+        });
+        this.warningEl = containerEl.createDiv({ cls: 'mousewheel-zoom-warning' });
+        this.warningEl.style.display = 'none';
+        this.updateWarningMessage(this.plugin.settings.modifierKey, this.plugin.settings.resizeInCanvas);
     }
 }
 
 module.exports = MouseWheelZoomPlugin;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZXMiOlsibm9kZV9tb2R1bGVzL3RzbGliL3RzbGliLmVzNi5qcyIsInNyYy91dGlsLnRzIiwibWFpbi50cyJdLCJzb3VyY2VzQ29udGVudCI6bnVsbCwibmFtZXMiOlsiUGx1Z2luIiwiTWFya2Rvd25WaWV3IiwiUGx1Z2luU2V0dGluZ1RhYiIsIlNldHRpbmciXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUF1REE7QUFDTyxTQUFTLFNBQVMsQ0FBQyxPQUFPLEVBQUUsVUFBVSxFQUFFLENBQUMsRUFBRSxTQUFTLEVBQUU7QUFDN0QsSUFBSSxTQUFTLEtBQUssQ0FBQyxLQUFLLEVBQUUsRUFBRSxPQUFPLEtBQUssWUFBWSxDQUFDLEdBQUcsS0FBSyxHQUFHLElBQUksQ0FBQyxDQUFDLFVBQVUsT0FBTyxFQUFFLEVBQUUsT0FBTyxDQUFDLEtBQUssQ0FBQyxDQUFDLEVBQUUsQ0FBQyxDQUFDLEVBQUU7QUFDaEgsSUFBSSxPQUFPLEtBQUssQ0FBQyxLQUFLLENBQUMsR0FBRyxPQUFPLENBQUMsRUFBRSxVQUFVLE9BQU8sRUFBRSxNQUFNLEVBQUU7QUFDL0QsUUFBUSxTQUFTLFNBQVMsQ0FBQyxLQUFLLEVBQUUsRUFBRSxJQUFJLEVBQUUsSUFBSSxDQUFDLFNBQVMsQ0FBQyxJQUFJLENBQUMsS0FBSyxDQUFDLENBQUMsQ0FBQyxFQUFFLENBQUMsT0FBTyxDQUFDLEVBQUUsRUFBRSxNQUFNLENBQUMsQ0FBQyxDQUFDLENBQUMsRUFBRSxFQUFFO0FBQ25HLFFBQVEsU0FBUyxRQUFRLENBQUMsS0FBSyxFQUFFLEVBQUUsSUFBSSxFQUFFLElBQUksQ0FBQyxTQUFTLENBQUMsT0FBTyxDQUFDLENBQUMsS0FBSyxDQUFDLENBQUMsQ0FBQyxFQUFFLENBQUMsT0FBTyxDQUFDLEVBQUUsRUFBRSxNQUFNLENBQUMsQ0FBQyxDQUFD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
+
+
+/* nosourcemap */

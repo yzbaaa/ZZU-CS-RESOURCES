@@ -1,8 +1,14 @@
 {
   "accentColor": "#097fc8",
   "cssTheme": "Blue Topaz",
-  "baseFontSize": 19,
+  "baseFontSize": 21,
   "translucency": false,
+  "enabledCssSnippets": [
+    "custom"
+  ],
+  "baseFontSizeAction": true,
   "theme": "system",
-  "baseFontSizeAction": true
+  "monospaceFontFamily": "Fira Code,思源黑体 常规,Microsoft YaHei",
+  "textFontFamily": "思源黑体 VF",
+  "interfaceFontFamily": "苹方 常规"
 }

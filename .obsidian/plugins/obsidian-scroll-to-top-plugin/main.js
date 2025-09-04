@@ -212,6 +212,33 @@ var injectSurfingComponent = (top = true) => {
   }
 };
 
+// plugins/homepage.ts
+var isHomepagePluginLoaded = (app) => {
+  var _a;
+  return !!((_a = app.plugins) == null ? void 0 : _a.plugins["homepage"]);
+};
+var needHomepageCompatibility = () => {
+  const homepageElements = document.querySelectorAll(".scroll-to-top-homepage-compat");
+  const homepageIcon = document.getElementById("nv-homepage-icon");
+  return !!homepageIcon && homepageElements.length === 0;
+};
+var addHomepageCompatibilityClass = (element, app) => {
+  if (isHomepagePluginLoaded(app)) {
+    element.classList.add("scroll-to-top-homepage-compat");
+  }
+};
+var handleHomepageCompatibility = (plugin) => {
+  if (!isHomepagePluginLoaded(plugin.app)) {
+    return;
+  }
+  if (needHomepageCompatibility()) {
+    plugin.removeButton("__C_scrollToTop");
+    plugin.removeButton("__C_scrollToBottom");
+    plugin.removeButton("__C_scrollToCursor");
+    plugin.createButton();
+  }
+};
+
 // main.ts
 var ROOT_WORKSPACE_CLASS = ".mod-vertical.mod-root";
 var globalMarkdownView = null;
@@ -290,6 +317,7 @@ var ScrollToTopPlugin = class extends import_obsidian2.Plugin {
     }
     let curWindow = config.curWindow || window;
     const markdownView = this.getCurrentViewOfType();
+    addHomepageCompatibilityClass(topWidget, this.app);
     (_a = curWindow.document.body.querySelector(ROOT_WORKSPACE_CLASS)) == null ? void 0 : _a.insertAdjacentElement("afterbegin", topWidget);
     if (!markdownView && !isContainSurfingWebview(this.settings)) {
       topWidget.style.visibility = "hidden";
@@ -301,6 +329,34 @@ var ScrollToTopPlugin = class extends import_obsidian2.Plugin {
     if (element) {
       element.remove();
     }
+  }
+  ensureButtonsExist() {
+    const {
+      enabledScrollToTop,
+      enabledScrollToBottom,
+      enabledScrollToCursor
+    } = this.settings;
+    if (enabledScrollToTop && !document.getElementById("__C_scrollToTop")) {
+      this.createButton();
+      return;
+    }
+    if (enabledScrollToBottom && !document.getElementById("__C_scrollToBottom")) {
+      this.createButton();
+      return;
+    }
+    if (enabledScrollToCursor && !document.getElementById("__C_scrollToCursor")) {
+      this.createButton();
+      return;
+    }
+    this.windowSet.forEach((window2) => {
+      if (enabledScrollToTop && !window2.document.getElementById("__C_scrollToTop")) {
+        this.createButton(window2);
+      } else if (enabledScrollToBottom && !window2.document.getElementById("__C_scrollToBottom")) {
+        this.createButton(window2);
+      } else if (enabledScrollToCursor && !window2.document.getElementById("__C_scrollToCursor")) {
+        this.createButton(window2);
+      }
+    });
   }
   getCurrentViewOfType() {
     var _a;
@@ -398,6 +454,7 @@ var ScrollToTopPlugin = class extends import_obsidian2.Plugin {
       this.createButton();
       this.registerEvent(this.app.workspace.on("file-open", () => {
         this.toggleIconView();
+        handleHomepageCompatibility(this);
       }));
       this.registerEvent(this.app.workspace.on("window-open", (win, window2) => {
         this.windowSet.add(window2);
@@ -409,7 +466,19 @@ var ScrollToTopPlugin = class extends import_obsidian2.Plugin {
       }));
       this.registerEvent(this.app.workspace.on("layout-change", () => {
         this.toggleIconView();
+        handleHomepageCompatibility(this);
       }));
+      this.registerEvent(this.app.workspace.on("active-leaf-change", () => {
+        setTimeout(() => {
+          this.ensureButtonsExist();
+          this.toggleIconView();
+          handleHomepageCompatibility(this);
+        }, 100);
+      }));
+      handleHomepageCompatibility(this);
+      setTimeout(() => {
+        handleHomepageCompatibility(this);
+      }, 3e3);
     });
     addPluginCommand(this, "scroll-to-top", "Scroll to Top", this.scrollToTop.bind(this));
     addPluginCommand(this, "scroll-to-bottom", "Scroll to Bottom", this.scrollToBottom.bind(this));
@@ -437,3 +506,5 @@ var ScrollToTopPlugin = class extends import_obsidian2.Plugin {
     }
   }
 };
+
+/* nosourcemap */

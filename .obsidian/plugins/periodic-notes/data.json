@@ -4,18 +4,18 @@
   "hasMigratedWeeklyNoteSettings": false,
   "daily": {
     "format": "",
-    "template": "",
-    "folder": "",
+    "template": "08 复盘/templates/每日模板.md",
+    "folder": "08 复盘/01 日复盘",
     "enabled": false
   },
   "weekly": {
-    "format": "gggg-wo",
-    "template": "09 复盘/templates/每周模板.md",
-    "folder": "09 复盘/02 周复盘",
+    "format": "gggg-w",
+    "template": "08 复盘/templates/每周模板.md",
+    "folder": "08 复盘/02 周复盘",
     "enabled": true
   },
   "monthly": {
-    "format": "",
+    "format": "YYYY-mm",
     "template": "",
     "folder": "",
     "enabled": true

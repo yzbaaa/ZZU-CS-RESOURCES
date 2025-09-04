@@ -12,5 +12,8 @@
     "landscape": false,
     "margin": "2",
     "downscalePercent": 100
-  }
+  },
+  "newLinkFormat": "relative",
+  "showLineNumber": false,
+  "readableLineLength": true
 }

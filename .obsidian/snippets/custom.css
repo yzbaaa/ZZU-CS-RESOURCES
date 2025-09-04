@@ -1,0 +1,337 @@
+.markdown-source-view div.cm-embed-block.cm-table-widget {
+    overflow-x: auto;
+}
+.markdown-source-view div.cm-embed-block.cm-table-widget > div > table {
+    width: max-content !important;
+}
+.markdown-reading-view .markdown-preview-view.markdown-rendered table {
+    width: max-content !important;
+}
+/* 1. 可变字体声明 */
+@font-face {
+    font-family: "SHS-SC-VF";
+    src: url("SourceHanSansSC-VF.otf") format("opentype");
+    font-weight: 200 900;
+    font-display: swap;
+  }
+  
+  /* 2. 变量 */
+  :root {
+    --w-normal: 400;
+    --w-heading: 700;
+    --w-bold: 600;
+    --w-heading-bold: 900; /* 可与 --w-bold 相同或稍低，比如 840 */
+  }
+  
+  /* 3. 基础字体应用（阅读+编辑） */
+  body,
+  .markdown-preview-view,
+  .cm-content {
+    font-family: "SHS-SC-VF", sans-serif !important;
+  }
+  
+  /* ============================= */
+  /* 阅读模式 (Reading View)       */
+  /* ============================= */
+  
+  /* 正文（阅读模式整体先设普通权重） */
+  .markdown-preview-view {
+    font-weight: var(--w-normal) !important;
+  }
+  
+  /* 阅读模式标题 */
+  .markdown-preview-view :is(h1,h2,h3,h4,h5,h6) {
+    font-weight: var(--w-heading) !important;
+  }
+  
+  /* 阅读模式加粗 */
+  .markdown-preview-view :is(strong,b) {
+    font-weight: var(--w-bold) !important;
+    font-variation-settings: "wght" var(--w-bold) !important;
+  }
+  
+  /* 标题里的加粗（如果想额外更粗） */
+  .markdown-preview-view :is(h1,h2,h3,h4,h5,h6) :is(strong,b) {
+    font-weight: var(--w-heading-bold) !important;
+    font-variation-settings: "wght" var(--w-heading-bold) !important;
+  }
+  
+  /* ============================= */
+  /* 编辑模式 (CM6 编辑 / Live Preview) */
+  /* ============================= */
+  
+  /* 统一设置编辑模式正文（先给所有行一个起点） */
+  .markdown-source-view.mod-cm6 .cm-line {
+    font-weight: var(--w-normal) !important;
+  }
+  
+  /* 方式 A: 针对行级（HyperMD 标题行类名） */
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-header,
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2,
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3,
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4,
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-5,
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-6 {
+    font-weight: var(--w-heading) !important;
+  }
+  
+  /* 方式 B: 针对 token（行内部 span.cm-header*）——有些主题用这个 */
+  .markdown-source-view.mod-cm6 .cm-header,
+  .markdown-source-view.mod-cm6 .cm-header-1,
+  .markdown-source-view.mod-cm6 .cm-header-2,
+  .markdown-source-view.mod-cm6 .cm-header-3,
+  .markdown-source-view.mod-cm6 .cm-header-4,
+  .markdown-source-view.mod-cm6 .cm-header-5,
+  .markdown-source-view.mod-cm6 .cm-header-6 {
+    font-weight: var(--w-heading) !important;
+  }
+  
+  /* 方式 C: 有些 Live Preview 直接生成真实 h1~h6（保险加） */
+  .markdown-source-view.mod-cm6 :is(h1,h2,h3,h4,h5,h6) {
+    font-weight: var(--w-heading) !important;
+  }
+  
+  /* 编辑模式加粗（正文加粗） */
+  .cm-content :is(.cm-strong,strong,b) {
+    font-weight: var(--w-bold) !important;
+    font-variation-settings: "wght" var(--w-bold) !important;
+  }
+  
+  /* 编辑模式：标题内加粗（如果你想单列） */
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-header :is(.cm-strong,strong,b),
+  .markdown-source-view.mod-cm6 .cm-header :is(.cm-strong,strong,b),
+  .markdown-source-view.mod-cm6 :is(h1,h2,h3,h4,h5,h6) :is(strong,b) {
+    font-weight: var(--w-heading-bold) !important;
+    font-variation-settings: "wght" var(--w-heading-bold) !important;
+  }
+  
+  /* （可选）不同级别标题微调：如果你想 h1 > h2 > h3 */
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1,
+  .markdown-preview-view h1 { font-weight: 760 !important; }
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2,
+  .markdown-preview-view h2 { font-weight: 730 !important; }
+  .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3,
+  .markdown-preview-view h3 { font-weight: 710 !important; }
+  /* h4~h6 可继续递减或统一 */
+
+/* 日间模式：文件栏文字颜色 */
+.theme-light .nav-file-title,
+.theme-light .nav-folder-title {
+  color: #666 !important;
+}
+
+/* 夜间模式：文件栏文字颜色变白一些 */
+.theme-dark .nav-file-title,
+.theme-dark .nav-folder-title {
+  color: #bfb4b4 !important;
+}
+
+
+/* 仅让表格整体外框圆角，不改配色、不加框线、不让每个单元格圆角 */
+
+/* 预览模式 */
+.markdown-preview-view table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* 编辑模式（Live Preview 和 Source） */
+.cm-table-widget table,
+.markdown-source-view.mod-cm6 table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+/* ===== 日间模式 ===== */
+
+/* 表头浅蓝色 */
+.theme-light .markdown-preview-view th,
+.theme-light .cm-table-widget th,
+.theme-light .markdown-source-view.mod-cm6 th {
+  background: #eaf4fb;
+  color: #222;
+  font-weight: 600;
+}
+
+/* 表格斑马纹（偶数行浅灰） */
+.theme-light .markdown-preview-view tbody tr:nth-child(even),
+.theme-light .cm-table-widget tbody tr:nth-child(even),
+.theme-light .markdown-source-view.mod-cm6 tbody tr:nth-child(even) {
+  background: #f7f7f7;
+}
+
+/* 表格单元格基础样式 */
+.theme-light .markdown-preview-view td,
+.theme-light .cm-table-widget td,
+.theme-light .markdown-source-view.mod-cm6 td {
+  background: transparent;
+  color: #222;
+  padding: 8px 12px;
+}
+
+/* 行内代码块和表格内代码块配色 */
+.theme-light .markdown-preview-view code,
+.theme-light .cm-table-widget code,
+.theme-light .markdown-source-view.mod-cm6 code {
+  background: #e3e7ea;
+  color: #68b0c5;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-family: var(--font-monospace, 'Fira Mono', monospace);
+  font-size: 95%;
+  border: none;
+  box-shadow: none;
+}
+
+/* 表头内的 code 也要变色 */
+.theme-light .markdown-preview-view th code,
+.theme-light .cm-table-widget th code,
+.theme-light .markdown-source-view.mod-cm6 th code {
+  background: #e3e7ea;
+  color: #68b0c5;
+}
+
+
+/* ===== 夜间模式 ===== */
+
+/* 表头深蓝色 */
+.theme-dark .markdown-preview-view th,
+.theme-dark .cm-table-widget th,
+.theme-dark .markdown-source-view.mod-cm6 th {
+  background: #1E2A31;
+  color: #BEBEBF;
+  font-weight: 600;
+}
+
+/* 表格斑马纹（偶数行深灰） */
+.theme-dark .markdown-preview-view tbody tr:nth-child(even),
+.theme-dark .cm-table-widget tbody tr:nth-child(even),
+.theme-dark .markdown-source-view.mod-cm6 tbody tr:nth-child(even) {
+  background: #232323;
+}
+
+/* 表格单元格基础样式 */
+.theme-dark .markdown-preview-view td,
+.theme-dark .cm-table-widget td,
+.theme-dark .markdown-source-view.mod-cm6 td {
+  background: transparent;
+  color: #B4B4B4;
+  padding: 8px 12px;
+}
+
+/* 行内代码块和表格内代码块配色（保持不变） */
+.theme-dark .markdown-preview-view code,
+.theme-dark .cm-table-widget code,
+.theme-dark .markdown-source-view.mod-cm6 code {
+  background: #3C3C3C;
+  color: #68b0c5;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-family: var(--font-monospace, 'Fira Mono', monospace);
+  font-size: 95%;
+  border: none;
+  box-shadow: none;
+}
+
+/* 表头内的 code 也要变色（保持不变） */
+.theme-dark .markdown-preview-view th code,
+.theme-dark .cm-table-widget th code,
+.theme-dark .markdown-source-view.mod-cm6 th code {
+  background: #3C3C3C;
+  color: #68b0c5;
+}
+
+/* 去除表格边框和阴影 */
+.markdown-preview-view table,
+.cm-table-widget table,
+.markdown-source-view.mod-cm6 table {
+  border: none;
+  box-shadow: none;
+}
+
+/* 单元格无边框无圆角 */
+.markdown-preview-view th,
+.markdown-preview-view td,
+.cm-table-widget th,
+.cm-table-widget td,
+.markdown-source-view.mod-cm6 th,
+.markdown-source-view.mod-cm6 td {
+  border: none;
+  border-radius: 0;
+}
+
+/* ---------- 题注标题淡蓝底+深蓝字 ---------- */
+.markdown-preview-view .callout-title,
+.markdown-source-view.mod-cm6 .callout-title {
+  background: #e6f0fc;
+  color: #227ce1;
+  font-weight: bold;
+  border-radius: 6px 6px 0 0;
+  padding: 0.4em 0.8em;
+  font-size: 1.08em;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- 题注正文浅灰色，覆盖所有内容 ---------- */
+.markdown-preview-view .callout-content,
+.markdown-source-view.mod-cm6 .callout-content {
+  background: #f5f6fa;
+  color: #222;
+  border-radius: 0 0 6px 6px;
+  padding: 0.8em 1em;
+}
+
+/* 不要给正文里的 strong/bold 单独加背景 */
+.markdown-preview-view .callout-content strong,
+.markdown-source-view.mod-cm6 .callout-content strong {
+  background: none;
+  color: inherit;
+}
+
+/* 让 callout 整体有点阴影和边框 */
+.markdown-preview-view .callout,
+.markdown-source-view.mod-cm6 .callout {
+  background: #f5f6fa;
+  border: 1px solid #e0e4ee;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px #0001;
+  margin: 1.2em 0;
+}
+
+/* ---------- 夜间模式：题注标题深灰底+亮蓝字 ---------- */
+.theme-dark .markdown-preview-view .callout-title,
+.theme-dark .markdown-source-view.mod-cm6 .callout-title {
+  background: #2b333f;           /* 深灰底 */
+  color: #438fd5;                /* 亮蓝字 */
+  font-weight: bold;
+  border-radius: 6px 6px 0 0;
+  padding: 0.4em 0.8em;
+  font-size: 1.08em;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- 夜间模式：题注正文深灰底+浅灰字 ---------- */
+.theme-dark .markdown-preview-view .callout-content,
+.theme-dark .markdown-source-view.mod-cm6 .callout-content {
+  background: #27292c;           /* 深灰底 */
+  color: #bfc1c8;                /* 浅灰字 */
+  border-radius: 0 0 6px 6px;
+  padding: 0.8em 1em;
+}
+
+/* 夜间模式：正文加粗不变色不加背景 */
+.theme-dark .markdown-preview-view .callout-content strong,
+.theme-dark .markdown-source-view.mod-cm6 .callout-content strong {
+  background: none;
+  color: inherit;
+}
+
+/* 夜间模式：整体阴影和边框 */
+.theme-dark .markdown-preview-view .callout,
+.theme-dark .markdown-source-view.mod-cm6 .callout {
+  background: #232936;
+  border: 1px solid #2c3443;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px #0005;
+  margin: 1.2em 0;
+}
