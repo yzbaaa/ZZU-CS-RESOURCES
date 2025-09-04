@@ -86,6 +86,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -769,6 +774,18 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    01. 经验分享
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -779,6 +796,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验课
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -902,7 +945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../07.%20professional_development/" class="md-nav__link">
+      <a href="../../01. course_resources/07. professional_development.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1350,7 +1393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../05.%20postgraduate_entrance_examination/01.%20experience_sharing/" class="md-nav__link">
+      <a href="../../05. postgraduate_entrance_examination/01. experience_sharing.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1702,6 +1745,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验课
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1726,7 +1786,22 @@
 
   <h1>01. 经验分享</h1>
 
-
+<h2 id="_1">实验课<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>这里讲的实验课包括大物实验和各种专业课实验（概括来说就是要写实验报告的实验），不包括用 PTA 完成且不用写实验报告的实验。</p>
+<p>对于要保研的同学，时间是很宝贵的，除了打好专业基础，你还需要大量的时间来投入到科研上。如果你能找到更高效的完成实验的方法，那么你没有理由继续坚持使用低效的方法。</p>
+<p>在保证满绩的前提下，提高完成实验的效率的核心思路就是：<strong>形成完成实验的流水线，并对每个步骤不断优化。</strong> 下面会将<strong>汇编实验</strong>作为例子穿插到方法的讲解中。</p>
+<ol>
+<li><strong>理解实验课的给分标准</strong>：向老师和助教问清楚实验课给分的具体标准，后续针对给分标准设计流水线</li>
+<li><strong>设计基本的流水线</strong>：对流水线的简单理解，就是每一个生产单位只专注处理某一个片段的工作。在这里的理解，就是我们在做实验的每个步骤中，仅专注于完成这个步骤中的所有任务，而非无序、随机、混乱地执行步骤，人相比计算机而言，切换任务所花费的代价是很大的。流水线有两个要点：<strong>一是顺序执行，二是批量处理</strong>。<ul>
+<li>举个例子，一个实验报告（用 Word 写）会包括好几部分，现在就考虑实验结果和结果分析这两部分。如果不用流水线，这两部分可能是这样被完成的：先打字打实验结果的标题，再改它的格式，之后打实验结果的文字内容。接着实验结果需要插图，那么这会儿再去跑一下代码，截图，插入图片，再改格式。下来该写结果分析了，那么再打标题，改格式；打正文，改格式；需要插图，再去作图，插入……<strong>非常混乱</strong>。</li>
+<li>那么改成流水线会是怎么样？你在做实验之前就备好了实验报告的<strong>模板</strong>（把老师给的模板改成自己的更具体的模板），<strong>里面的格式都已经调好</strong>，写实验报告时复制一份开始写就可以。你也<strong>把做实验的步骤完整详细地列了出来</strong>，做实验时<strong>按部就班</strong>即可。代码运行好后，把运行结果截图，并分门别类放好。要完成实验结果和结果分析这两部分，就<strong>批量</strong>把图片插入（你可以调整 Word 插入图片的默认格式），<strong>批量</strong>把图片的说明写好，<strong>批量</strong>把正文写好。如果哪里格式不对，就用格式刷<strong>批量</strong>调整。如果有个共同的文字错误需要替换，那么就<strong>批量替换</strong>……</li>
+</ul>
+</li>
+<li><strong>流程优化</strong>：<ul>
+<li>比如汇编实验时你从编辑好源代码到运行，需要依次输入三行命令，分别进行汇编、连接、运行。那么其实你可以把这三条命令放到一个脚本中，每次要汇编、连接、运行时只需要运行一次脚本就可以了。linux 上用 shell 脚本，windows 上用 bat 脚本。不会写可以问AI。</li>
+</ul>
+</li>
+</ol>
 
 
 
@@ -1747,7 +1822,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2024年9月16日 13:07:32">2024-09-16</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-15</span>
   </span>
 
     
